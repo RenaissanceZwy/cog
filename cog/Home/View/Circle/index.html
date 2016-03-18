@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{$Think.const.HOME_CSS}circle/circle.css" rel="stylesheet">
+    <title>圈子页面</title>
+</head>
+<body>
+
+<!--nav导航条信息1-->
+<div class="nav-container">
+    <img class="nav-logo" src="{$Think.const.HOME_IMGS}redLogo.png" title="logo">
+    <img class="nav-caption" src="{$Think.const.HOME_IMGS}caption.png" title="发现另一个你！">
+    <ul class="nav-bar">
+        <li><a  href="{$Think.const.URL}Index/index">首页</a></li>
+        <li><a class="active" href="{$Think.const.URL}Circle/index">圈子</a></li>
+        <li><a href="{$Think.const.URL}Game/index">游戏</a></li>
+        <li><a href="{$Think.const.URL}MyCircle/index">我的圈子</a></li>
+    </ul>
+    <form action="" class="nav-form">
+        <input class="nav-form-search" type="text" placeholder="搜索附近的圈子">
+        <input class="nav-form-submit" style="background: url('{$Think.const.HOME_IMGS}search.png') no-repeat center" type="submit" value="">
+    </form>
+</div>
+
+<!--页面主体-->
+
+    <!--最近浏览-->
+    <div class="main-recent" >
+        <h3>最近浏览</h3>
+        <a class="main-recent-p1">查看更多>></a>
+        <volist name="res_recent" id="recent">
+          <volist name="recent" id="view">
+        <div class="main-recent-circle">
+            <a href="{$Think.const.URL}Circle/circlesquare?circle_id={$view.circle_id}"><img src="/cog/{$view.circle_img}"></a>
+          <span>
+            <a href=""><p class="main-recent-p2">帖子数：{$view.post_num}</p></a>
+            <p class="main-recent-p3">{$view.circle_name}</p>
+          </span>
+        </div>
+        </volist>
+        </volist>
+    </div>
+
+
+<!--最新圈子-->
+    <div class="main-new">
+        <h3>最新圈子</h3>
+        <p class="main-new-p1">查看更多>></p>
+        <div class="clear"></div>
+        <volist name="new_circle" id="data">
+          <div class="main-new-circle">
+            <a href="{$Think.const.URL}Circle/circlesquare?circle_id={$data.circle_id}"><img src="/cog/{$data.circle_img}"></a>
+          <span>
+            <a  class="main-new-p2" href="#">帖子数：{$data.circle_post_num}</a>
+            <p class="main-new-p3"><!-- 关注：1000 -->{$data.circle_name}</p>
+          </span>
+        </div>
+        </volist>
+    </div>
+
+<!--热门圈子-->
+    <div class="main-hot">
+        <h3>热门圈子</h3>
+        <p class="main-hot-p1">查看更多>></p>
+        <volist name="res_hotCircle" id="circle">
+        <div class="main-hot-circle">
+            <a href="{$Think.const.URL}Circle/circlesquare?circle_id={$circle.post_circle_id}"><img src="/cog/{$circle.circle_img}"></a>
+          <span>
+            <a href=""><p class="main-hot-p2">帖子数：1000</p></a>
+            <p class="main-hot-p3">{$circle.circle_name}</p>
+          </span>
+        </div>
+       </volist>
+    </div>
+
+
+
+<script src="{$Think.const.HOME_JS}/jquery.js"></script>
+<script>
+    //查看更多最近浏览
+    $(".main-recent-p1").click(function(){
+        var str =$(this).html();
+        if(str[0]=='查'){
+            $(".main-recent").css("height","auto");
+            $(this).html("&lt;&lt;返回");
+        }else{
+            $(".main-recent").css("height",250);
+            $(this).html("查看更多&gt;&gt;");
+        }
+    });
+
+    //查看更多最新圈子
+    $(".main-new-p1").click(function(){
+        var str =$(this).html();
+        if(str[0]=='查'){
+            $(".main-new").css("height","auto");
+            $(this).html("&lt;&lt;返回");
+        }else{
+            $(".main-new").css("height",250);
+            $(this).html("查看更多&gt;&gt;");
+        }
+    });
+    //查看更多热门圈子
+    $(".main-hot-p1").click(function(){
+        var str =$(this).html();
+        if(str[0]=='查'){
+            $(".main-hot").css("height","auto");
+            $(this).html("&lt;&lt;返回");
+        }else{
+            $(".main-hot").css("height",250);
+            $(this).html("查看更多&gt;&gt;");
+        }
+    });
+
+
+
+</script>
+</body>
+</html>

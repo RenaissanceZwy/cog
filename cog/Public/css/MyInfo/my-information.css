@@ -1,0 +1,674 @@
+/*网页初始化css来实现不同浏览器的兼容性*/
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p {
+    margin: 0;
+    padding: 0;
+}
+
+/*网页的body的默认字体以及背景颜色*/
+body {
+    background: rgb(250, 250, 250);
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/*清除超链接a的默认样式*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*清除ul li的默认样式*/
+ul {
+    list-style: none;
+}
+
+/*nav部分*/
+.nav-container {
+    position: relative;
+    background: rgb(17, 92, 147);
+    margin: 33px auto 20px auto;
+    width: 1200px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+/*nav-logo*/
+.nav-logo {
+    margin-left: 50px;
+    width: 60px;
+    height: 55px;
+    cursor: pointer;
+    float: left;
+}
+
+/*nav-发现另一个你*/
+.nav-caption {
+    width: 200px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+}
+
+/*nav-导航条及按钮*/
+.nav-bar {
+    width: 450px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+}
+
+.nav-bar a {
+    color: rgb(230, 230, 230);
+    margin-left: 20px;
+    width: 80px;
+    height: 55px;
+    float: left;
+    font-size: 16px;
+    line-height: 55px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-bar a:hover {
+    color: white;
+    font-size: 18px;
+}
+
+a.active {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-form {
+    position: absolute;
+    width: 280px;
+    height: 35px;
+    right: 100px;
+    margin-top: 10px;
+}
+
+.nav-form-search {
+    width: 200px;
+    height: 30px;
+    float: left;
+    text-indent: 10px;
+}
+
+.nav-form-submit {
+    border: none;
+    position: absolute;
+    top: 3px;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav-form-submit:hover {
+    color: dodgerblue;
+}
+
+.MyImg {
+    right: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+}
+/*用户信息栏*/
+.user-container {
+    margin: 50px auto;
+    width: 1100px;
+    height: 150px;
+    position: relative;
+}
+/*用户头像*/
+.avator {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+/*用户名字*/
+.user-name {
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    width: 100px;
+    height: 40px;
+}
+/*定位图标*/
+.gender-logo {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+/*用户地址*/
+.fix-position {
+    width: auto;
+    left: 350px;
+    position: absolute;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+/*用户圈龄*/
+.circle-age {
+    margin-top: 20px;
+    width: auto;
+    position: absolute;
+    left: 450px;
+    font-size: 14px;
+    font-weight: 600;
+}
+/*我的等级*/
+.my-level {
+    width: auto;
+    position: absolute;
+    left: 600px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*关注与被关注按钮*/
+.attention {
+    background: rgb(17, 92, 147);
+    left: 700px;
+    position: absolute;
+    margin-top: 10px;
+    border: 1px solid rgb(17, 92, 147);
+    border-radius: 4px;
+    width: 300px;
+    height: 40px;
+}
+/*关注与被关注按钮*/
+.attention span {
+    background: white;
+    border: 1px solid rgb(17, 92, 147);
+    text-align: center;
+    width: 140px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 6px;
+    line-height: 30px;
+    font-size: 14px;
+    float: left;
+}
+/*关注与被关注按钮*/
+.attention span:hover {
+    border: 1px solid whitesmoke;
+    color: white;
+    background: rgb(17, 92, 147);
+}
+/*关注与被关注按钮*/
+.attention span:hover a {
+    color: white;
+    background: rgb(17, 92, 147);
+}
+/*关注列表*/
+.subscribe {
+    overflow: auto;
+    position: absolute;
+    top: 56px;
+    left: 700px;
+    border: 1px solid #ccc;
+    width: 150px;
+    height: auto;
+}
+
+.subscribe input[type='button'] {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    border: none;
+}
+
+.subscribe input[type='button']:hover {
+    background: green;
+    color: white;
+}
+/*被关注列表*/
+.subscribed {
+    overflow: auto;
+    position: absolute;
+    top: 56px;
+    border: 1px solid #ccc;
+    width: 150px;
+    height: auto;
+    left: 850px;
+}
+
+.subscribed input[type='button'] {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    border: none;
+}
+
+.subscribed input[type='button']:hover {
+    background: green;
+    color: white;
+}
+
+/*水平线*/
+hr {
+    top: 50px;
+    left: 22%;
+    position: absolute;
+}
+
+.information {
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+}
+
+/*关注的圈子*/
+.concerned-circle {
+    width: auto;
+    overflow: auto;
+    margin-top: 5px;
+}
+
+.concerned-circle a {
+    margin-left: 10px;
+    background-color: #B2B2B2;
+}
+/*个人说明*/
+.instruction {
+    overflow: auto;
+    width: auto;
+    margin-top: 5px;
+}
+/*查看私聊*/
+.private-chat {
+    position: absolute;
+    width: 110px;
+    height: 36px;
+    top: 84px;
+    left: 500px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.private-chat:hover{
+    color: orange;
+}
+
+.modify {
+    position: absolute;
+    bottom: 20px;
+    left: 1000px;
+    background-color: #F4E4E5;
+}
+
+.modify:hover {
+    color: blue;
+}
+
+
+
+/*动态栏*/
+.actions-container {
+    height: auto;
+    margin: 20px auto 30px;
+    width: 1100px;
+}
+
+/*动态栏的选择li*/
+.actions-container ul li {
+    margin-left: 5px;
+    float: left;
+    box-shadow: 0 0 10px rgb(17, 92, 147);
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    border-right: none;
+    cursor: pointer;
+}
+
+/*li.active样式*/
+.actions-container ul li.active2 {
+    color: white;
+    background: rgb(17, 92, 147);
+}
+
+/*每一个选择li对应的内容*/
+.actions-container .tabcontent {
+    width: 1100px;
+    border: 1px solid gray;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/*每一个发帖内容*/
+.send ,.reply{
+    position: relative;
+    width: 1100px;
+    height: 100px;
+    margin-top: 60px;
+}
+.send:nth-child(2n) ,.reply:nth-child(2n){
+    background: aliceblue;
+}
+.send:nth-child(2n+1) ,.reply:nth-child(2n+1){
+    background: lightgray
+;
+}
+/*"发帖","回复"文字式样*/
+.font {
+    color: whitesmoke;
+    background: slateblue;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    height: 30px;
+    width: 40px;
+    border-left: 2px solid gray;
+    line-height: 30px;
+    font-size: 16px;
+    padding-left: 5px;
+    font-weight: 600;
+}
+
+/*动态，发帖，回复box*/
+.note-content, .post-note, .reply-note {
+    width: 1000px;
+    height: 100px;
+    margin-left: 70px;
+}
+
+/*帖子名称，圈子名称，游戏名称与时间*/
+.note-content p span, .post-note p span, .reply-note p span {
+    position: absolute;
+}
+
+/*动态，发帖，回复box头信息*/
+.note-content .head{
+    width: 1000px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    position: relative;
+}
+.post-note .head{
+    width: 1000px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    position: relative;
+}
+.reply-note .head{
+    width: 1000px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    position: relative;
+}
+/*帖子主要内容*/
+.note-subcontent, .post-note-subcontent, .reply-note-subcontent {
+    font-size: 15px;
+    border-bottom: none;
+    width: 1000px;
+    height: 70px;
+    line-height: 70px;
+    font-weight: 500;
+    text-indent: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border-left: 1px solid black;
+}
+/*帖子名称，圈子名称，游戏名称与时间鼠标放置*/
+.note-content p span a:hover, .post-note p span a:hover, .name:hover, .reply-note a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+/*我收藏的帖子*/
+.fine-post {
+    position: relative;
+    margin: 5px auto;
+    width: 800px;
+    min-height: 110px !important;
+    max-height: 250px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.post-left {
+    min-height: 110px !important;
+    max-height: 250px;
+    width: 150px;
+    float: left;
+    overflow: hidden;
+}
+
+.post-left-main {
+    position: absolute;
+    min-height: 100px;
+    max-height: 200px;
+    width: 150px;
+}
+
+.post-headportrait {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.post-discussion {
+    position: absolute;
+    top: 65px;
+    left: 10px;
+    width: 28px;
+    height: 22px;
+}
+
+.post-joinin {
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    font-size: 15px;
+}
+
+.post-lastpost {
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    width: 28px;
+    height: 22px;
+    margin-bottom: 5px;
+}
+
+.post-lasttime {
+    position: absolute;
+    top: 85px;
+    left: 40px;
+    font-size: 15px;
+}
+
+.post-right {
+    min-height: 110px !important;
+    max-height: 250px;
+    width: 650px;
+    float: left;
+}
+
+.post-game {
+    margin-top: 5px;
+    margin-left: 14px;
+    height: 15px;
+    width: 630px;
+    font-size: 15px;
+}
+
+.post-title {
+    margin-left: 14px;
+    margin-top: 5px;
+    height: 29px;
+    width: 600px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(23, 23, 23);
+}
+
+.post-title:hover {
+    color: deepskyblue;
+}
+
+.post-title:hover {
+    text-decoration: underline;
+}
+
+.post-content {
+    overflow: hidden;
+    margin-left: 14px;
+    margin-top: 5px;
+    min-height: 20px !important;
+    max-height: 140px;
+    width: 600px;
+    font-size: 15px;
+    border: 1px solid darkgrey;
+}
+
+.post-postpic-main {
+    width: 600px;
+    height: 102px;
+    margin-left: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.post-postpic {
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.fine {
+    position: absolute;
+    top: 65px;
+    left: 10px;
+    font-size: 15px;
+}
+
+.fine-information {
+    position: absolute;
+    height: 40px;
+    width: 650px;
+    bottom: 0;
+}
+
+.fine-joinin {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    font-size: 15px;
+}
+
+.fine-lasttime {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    font-size: 15px;
+}
+
+/*查看资料*/
+
+.tabcontent1 {
+    margin: 15px auto 0 auto;
+    width: 1300px;
+    position: absolute;
+    display: none;
+}
+
+.tabcontent1-p {
+    float: right;
+    margin-top: 5px;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+.tabcontent1-p:hover {
+    color: gray;
+}
+
+.sixin {
+    width: 1100px;
+    height: 440px;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+
+.sixin img {
+    width: 70px;
+    height: 70px;
+    margin: 5px 10px;
+    float: left;
+}
+
+.sixin-p1 {
+    margin: 2px 10px;
+    width: 70px;
+    height: 20px;
+    line-height: 30px;
+    text-align: left;
+    float: left;
+}
+
+.sixin-p2 {
+    width: 1000px;
+    height: 20px;
+    line-height: 20px;
+    margin: 10px 90px;
+    float: left;
+}
+
+.sixin-neirong {
+    width: 800px;
+    height: 200px;
+    margin: 5px auto;
+    border: 1px solid black;
+}
+
+.sixin-p3 {
+    width: 300px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 7px 30px 5px 750px;
+    cursor: pointer;
+}
+
+.tabcontent2 {
+    margin: 0 auto;
+    width: 1300px;
+    display: none;
+}
+
+
+
+
+

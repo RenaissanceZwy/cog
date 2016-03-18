@@ -1,0 +1,599 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link href="<?php echo (HOME_CSS); ?>management/management.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+      <div class="container">
+           <ul class="list">
+               <li >帖子管理</li>
+               <li>新闻管理</li>
+               <li>用户管理</li>
+               <li>圈子管理</li>
+               <li style="border-bottom: 2px solid #C6C6C6 ">创建圈子</li>
+           </ul>
+          <div class="tabcontent">
+          <div class="logo">
+              <img src="<?php echo (HOME_IMGS); ?>management/logo.png">
+          </div>
+          <p class="slogan">
+              欢迎进入COG后台管理系统！
+          </p>
+      </div>
+
+          <div class="tabcontent" style="display:none">
+              <div class="selects">
+                  <select id="circle">
+                      <option>选择圈子</option>
+                      <?php if(is_array($res_circle)): $i = 0; $__LIST__ = $res_circle;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$circle): $mod = ($i % 2 );++$i;?><option><?php echo ($circle["circle_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                  </select>
+                  <select id="game" >
+                     <option>选择游戏</option>
+                  </select>
+                  <select>
+                      <option>选择服务器</option>
+                      <option>艾欧尼亚</option>
+                      <option>刀塔2</option>
+                      <option>三国杀</option>
+                  </select>
+                  <select id="condition">
+                      <option>选择排序方式</option>
+                      <option>按时间</option>
+                      <option>按热度</option>
+                  </select>
+                  <button id="post_filtrate">确认筛选</button>
+              </div>
+              <div class="search">
+                  <input type="text">
+                  <img src="<?php echo (HOME_IMGS); ?>management/search.png">
+              </div>
+              <div class="clearfloat"></div>
+              <hr size="2" color="#515151">
+              <p class="item1 item">帖子主题</p>
+              <p class="item2 item">作者</p>
+              <p class="item3 item">发布时间</p>
+              <p class="item4 item">浏览量</p>
+              <p class="item5 item">回复量</p>
+              <p class="item6 item">操作</p>
+
+             <table class="note-table" id="post-table">
+             <!--  <?php if(is_array($post)): $i = 0; $__LIST__ = $post;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$post): $mod = ($i % 2 );++$i;?><tr>
+                  <td width="280px" class="td1"> <a href="<?php echo (URL); ?>User/index?post_id=<?php echo ($post["post_id"]); ?>"><?php echo ($post["post_title"]); ?></a></td>
+                  <td width="80px" class="td2"><a href="#"><?php echo ($post["post_user"]); ?></a></td>
+                  <td width="130px" class="td3"><p ><?php echo ($post["post_time"]); ?></p></td>
+                  <td width="70px" class="td4">浏览</td>
+                  <td width="80px" class="td5">回复</td>
+                  <td width="200px" class="td6">
+                    <div class="delete" data-id="<?php echo ($post["post_id"]); ?>">删除</div>
+                    <div class="highlight" data-id="<?php echo ($post["post_id"]); ?>">加精</div>
+                  <div class="stick">置顶</div>
+                  </td>
+              </tr><?php endforeach; endif; else: echo "" ;endif; ?>    -->
+              </table>
+          </div>
+
+          <div class="tabcontent"  style="display: none">
+             <ul class="list2">
+                 <li style="border-right: none" class="active2">新闻管理</li>
+                 <li>新闻发布</li>
+             </ul>
+              <div class="sub-tabcontent">
+                  <form>
+                      <select id="news_filtrate">
+                          <option>请选择排序方式</option>
+                          <option>按时间</option>
+                          <option>按热度</option>
+                      </select>
+                     <button id="filtrate">确定筛选</button>
+                  </form>
+
+                  <table class="sub-table">
+                       <tr>
+                           <th  width="300px" style="text-align: left">新闻标题</th> <th width="240px">浏览量</th> <th width="200px">操作</th>
+                       </tr>
+                       <?php if (!$res_news){ ?>
+                         <tr>   没有新闻被创建 </tr>
+                       <?php  } ?>
+                       <?php if(is_array($res_news)): $i = 0; $__LIST__ = $res_news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$news): $mod = ($i % 2 );++$i;?><tr>
+                          <td>
+                              <div class="title"><?php echo ($news["news_title"]); ?></div>
+                          </td>
+                          <td class="number">
+                              <?php echo ($news["news_view"]); ?>
+                          </td>
+                          <td> <div class="delete2" data-id="<?php echo ($news["news_id"]); ?>">删除</div><div class="stick2">置顶</div>
+                          </td>
+                      </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                  </table>
+              </div>
+              <div class="sub-tabcontent"  style="display: none">
+              <form action="<?php echo (URL); ?>Management/release_news" method="post" enctype="multipart/form-data">
+             <!-- <form id="news_form" enctype="multipart/form-data"> -->
+                  <div class="heading">
+                      <p>标题</p>
+                      <input type="text" name="title" id="title_text">
+                  </div>
+                  <div class="text">
+                      <p>正文</p>
+                       
+                        <textarea id="editor" name="editor"></textarea>
+                  </div> 
+
+                  <input  id="post" type="submit" value="发布">
+
+                  <input type="file" name="MyFile" id="upload">
+              </form>
+
+              </div>
+          </div>
+              <div class="tabcontent"  style="display: none">
+               <table class="user-table">
+                   <tr>
+                       <th width="160px">用户头像</th>
+                       <th width="160px" >用户ID</th>
+                       <th width="160px">等级</th>
+                       <th width="320px">操作</th>
+                   </tr>
+                   <?php if(is_array($res_user)): $i = 0; $__LIST__ = $res_user;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><tr>
+                       <td><div class="picture"><img src="/cog/<?php echo ($user_headimg); ?>"></div></td>
+                       <td style="text-align: center"><?php echo ($user["user_name"]); ?></td>
+                       <td style="text-align: center"><?php echo ($user["user_level"]); ?></td>
+                       <td><div class="add" style="margin-left:90px;">+1级</div><div class="minus">-1级</div><div class="cutoff" data-id="<?php echo ($user["user_id"]); ?>">删除账号</div></td>
+                   </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+               </table>
+          </div>
+              <div class="tabcontent"  style="display: none">
+                      <table class="manage-table">
+                            <tr>
+                                <th width="100px">圈子名称</th>
+                                <th width="150px">创建时间</th>
+                                <th width="150px">定位</th>
+                                <th width="100px">管理员ID</th>
+                                <th width="100px">帖子数</th>
+                                <th width="240">操作</th>
+                            </tr>
+                            <?php if(is_array($res_circle)): $i = 0; $__LIST__ = $res_circle;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$circle): $mod = ($i % 2 );++$i;?><tr>
+                              <td><?php echo ($circle["circle_name"]); ?></td>
+                              <td><?php echo ($circle["circle_time"]); ?></td>
+                              <td><?php echo ($circle["circle_location"]); ?></td>
+                              <td><?php echo ($circle["circle_monitor_id"]); ?></td>
+                              <td><?php echo ($circle["circle_post_num"]); ?></td>
+                             
+                              <td>
+                                <input type="hidden" class="circle_id" value="<?php echo ($circle["circle_id"]); ?>">
+                                <a  href="<?php echo (URL); ?>Management/circle_delete?circle_id=<?php echo ($circle["circle_id"]); ?>" class="circle_delete">删除</a>
+                                <a href="">更改管理员</a>
+                                <a href="">信息修改</a>
+                              </td>
+                          </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                         
+                      </table>
+              </div>
+                  <div class="tabcontent tabcontent4" style="display:none">
+                    <form action="<?php echo (URL); ?>Management/create_circle" method="post" enctype="multipart/form-data">
+                      <h1>圈子信息</h1>
+                      <div class="circle-name">
+                         <span> 圈&nbsp;名:</span>
+                          <input type="text" name="circle_name">
+                      </div>
+                          <div class="locate">
+                              <span>定位:</span>
+                              <select name="province" class="select-area1"></select><select name="city"></select><select name="area">
+                              </select>
+                          </div>
+                          <img src="#" class="circle-picture">
+                          <!-- <button id="click">点击上传头像</button> -->
+                          <input type="file" name="MyFile" id="click">
+                          <div class="included-games">
+                              <div class="alert-input1">
+                                   <input type="text" placeholder="请输入添加的游戏名" id="game-input">
+                                  <button id="ensure1">确定</button>
+                              </div>
+                              <div class="alert-input2">
+                                  <input type="text" placeholder="请输入添加的服务器名" id="server-input">
+                                  <button id="ensure2">确定</button>
+                              </div>
+
+                              <div id="gray"></div>
+                              <span>包含的游戏:</span><span style="margin-left: 40px">游戏</span>
+                              <img  src="<?php echo (HOME_IMGS); ?>management/add.png" class="add-games">
+                              <img class="minus-games" src="<?php echo (HOME_IMGS); ?>management/minus.png">
+                              <span style="margin-left: 80px">对应服务器:</span>
+                              <img  src="<?php echo (HOME_IMGS); ?>management/add.png" class="add-servers">
+                              <img class="minus-servers" src="<?php echo (HOME_IMGS); ?>management/minus.png">
+                              <ul class="game-names">
+                                  <li class="active3">DOTA2</li>
+                                  <li>风暴英雄</li>
+                                  <li>英雄联盟</li>
+                                  <li>炉石传说</li>
+                                  <li>穿越火线</li>
+                                  <li>地下城与勇士</li>
+                              </ul>
+                              <ul class="server-names">
+                                  <li>电信专区(上海)</li>
+                                  <li>电信专区(广州)</li>
+                                  <li>电信专区(山东)</li>
+                                  <li>联通专区</li>
+                              </ul>
+                              <ul class="server-names" style="display: none">
+                                  <li>电信专区(上海)</li>
+                                  <li>电信专区(广州)</li>
+                                  <li>电信专区(山东)</li>
+                                  <li>联通专区(北京)</li>
+                                  </ul>
+                              <ul class="server-names" style="display: none">
+                                  <li>艾欧尼亚</li>
+                                  <li>暗影岛</li>
+                                  <li>黑色玫瑰</li>
+                                  <li>德玛西亚</li>
+                                  <li>巨龙之巢</li>
+                                  <li>皮尔沃特夫</li>
+                              </ul>
+                              <ul class="server-names" style="display: none">
+                                  <li>电信专区(1)</li>
+                                  <li>电信专区(2)</li>
+                                  <li>电信专区(3)</li>
+                                  <li>联通专区(1)</li>
+                                  <li>联通专区(2)</li>
+                                  <li>联通专区(3)</li>
+                              </ul>
+                              <ul class="server-names" style="display: none">
+                              <li>湖北1区</li>
+                              <li>湖北2区</li>
+                              <li>湖北3区</li>
+                              <li>湖北4区</li>
+                              <li>上海1区</li>
+                              <li>上海2区</li>
+                               </ul>
+                              <ul class="server-names" style="display:none">
+                                  <li>湖北1区(1)</li>
+                                  <li>湖北2区</li>
+                                  <li>湖北3区</li>
+                                  <li>湖北4区</li>
+                                  <li>上海1区</li>
+                                  <li>上海2区</li>
+                                  <li>上海3区</li>
+                              </ul>
+                          </div>
+                      <div class="circle-instruction">
+                          <span>圈子说明:</span>
+                          <textarea name="circle_describe"></textarea>
+                      </div>
+                      <button id="complete">完成</button>
+                    </form>
+                  </div>
+          </div>
+          <script type="text/javascript" src="<?php echo (HOME_JS); ?>test/select.js"></script>
+      <script type="text/javascript" src="<?php echo (HOME_JS); ?>test/jquery.form.js"></script>
+      <script  src="<?php echo (HOME_JS); ?>management/PCASClass.js"></script>
+      <script src="<?php echo (HOME_JS); ?>management/jquery.js"></script>
+      <script src="<?php echo (HOME_JS); ?>management/ueditor/utf8-php/ueditor.config.js"></script>
+      <script src="<?php echo (HOME_JS); ?>management/ueditor/utf8-php/ueditor.all.min.js"></script>
+      <script>
+      $(".list li").click(function(){
+      var index = $(this).index()+1;
+      $('.tabcontent').eq(index).show().siblings('.tabcontent').hide();
+          $(this).addClass("active").siblings().removeClass("active");
+          $(this).css("color","black").siblings().css("color","#999999");
+      })
+
+      $(".list2 li").click(function(){
+          var index = $(this).index();
+          $('.sub-tabcontent').eq(index).show().siblings('.sub-tabcontent').hide();
+          $(this).addClass("active2").siblings().removeClass("active2");
+      })
+
+      $(".game-names  li").click(function(){
+          var index = $(this).index();
+          $(this).addClass("active3").siblings().removeClass("active3");
+          $('.server-names').eq(index).show().siblings('.server-names').hide();
+      })
+
+      $(".server-names  li").click(function(){
+          var index = $(this).index();
+          $(this).addClass("active4").siblings().removeClass("active4");
+      })
+      $(".minus-games").click(function(){
+         var r= confirm("确定移除该游戏吗?");
+         if (r) {
+             var index = $(".active3").index();
+             $(".active3").remove();
+             $(".server-names").eq(index).remove();
+             var number = document.getElementsByClassName("game-names")[0].getElementsByTagName("li").length;
+             if (number >= 1) {
+                 if(number==index){
+                 $(".server-names").eq(index-1).show();
+                     $(".game-names li").eq(index-1).addClass("active3");
+             }
+                 else{
+                     $(".server-names").eq(index).show();
+                     $(".game-names li").eq(index).addClass("active3");
+                 }
+             }
+             if(number==0)
+             {
+                 var newul = document.createElement("ul");
+                 var h=document.getElementsByClassName("included-games")[0];
+                 h.appendChild(newul);
+                 newul.className="server-names";
+             }
+         }
+      }
+      )
+//      点击添加游戏按钮
+      $(".add-games").click(function(){
+          $(".alert-input1").show();
+          $("#gray").show();
+      }
+      )
+//      添加游戏点击确定
+      $("#ensure1").click(function() {
+                  $(".alert-input1").hide();
+                  $("#gray").hide();
+                  var l = document.createElement("li");
+                  var e = document.getElementsByClassName("game-names")[0];
+                  e.appendChild(l);
+               l.innerHTML = $("#game-input").val();
+
+                  var newul = document.createElement("ul");
+                  var h=document.getElementsByClassName("included-games")[0];
+                   h.appendChild(newul);
+                  newul.className="server-names";
+                 $(newul).css("display","none");
+          $(".game-names  li").click(function(){
+              var index = $(this).index();
+              $(this).addClass("active3").siblings().removeClass("active3");
+              $('.server-names').eq(index).show().siblings('.server-names').hide();
+          })
+      }
+      );
+//      点击灰色区域用于关闭弹出窗口
+      $("#gray").click(function()
+      {
+          $(".alert-input1").hide();
+          $(".alert-input2").hide();
+          $("#gray").hide();
+      })
+      //  删除服务器
+      $(".minus-servers").click(function(){
+                  var r= confirm("确定移除该服务器吗?");
+                  if (r)
+                  {
+                      $(".active4").hide();
+                  }
+              }
+      )
+//      添加服务器
+      $(".add-servers").click(function(){
+                  $(".alert-input2").show();
+                  $("#gray").show();
+              }
+      )
+      //      添加服务器点击确定
+      $("#ensure2").click(function() {
+                var index=$(".active3").index();
+                  $(".alert-input2").hide();
+                  $("#gray").hide();
+                  var l = document.createElement("li");
+                  var e = document.getElementsByClassName("server-names")[index];
+                  e.appendChild(l);
+                  l.innerHTML = $("#server-input").val();
+          $(".server-names  li").click(function(){
+              var index = $(this).index();
+              $(this).addClass("active4").siblings().removeClass("active4");
+          })
+              }
+      );
+
+         var ue=UE.getEditor('editor', {
+              toolbars:[['undo','redo','|','bold','italic','underline','strikethrough', 'superscript', 'subscript','fontfamily','fontsize', 'forecolor','link','unlink','|','justifyleft', 'justifycenter', 'justifyright', 'justifyjustify','|','insertorderedlist', 'insertunorderedlist','|','emotion','music','simpleupload','insertimage','insertvideo']]
+          });
+      new PCAS("province","city","area","","","");
+
+
+
+      // 赵文奕的js
+
+      // 进行帖子管理
+      // 显示帖子
+       $(document).ready(function(){
+         
+        $.post("<?php echo (URL); ?>Management/show_post",{},function(data){
+           $('#post-table').children().remove();
+        
+          $.each(data.post,function(k,v){
+
+            var html="<tr><td width='280' class='td1'><a href=<?php echo (URL); ?>User/index?post_id="+v.post_id+">"+v.post_title+"</a></td><td width='80' class='td2'><a href='#'>"+v.post_user+"</a></td><td width='130' class='td3'><p>"+v.post_time+"</p></td><td width='70' class='td4'>浏览</td><td width='80' class='td5'>回复</td><td width='200' class='td6'><div class='delete' data-id="+v.post_id+">删除</div><div class='highlight' data-id="+v.post_id+">加精</div><div class='stick'>置顶</div></td></tr>";
+           $("#post-table").append(html);
+
+          });
+        },'json');
+      });
+
+      
+
+
+
+     // 进行新闻管理
+     // 创建新闻操作
+     // $('#post').click(function(){
+     //    // 获取新闻标题
+     //    var title=$('#title').val();
+     //    // 获取新闻内容
+     //    var editor=UE.getEditor('editor');
+     //    var content=editor.getContent();
+     //    var form=$('#news_form')[0];
+     //    var formdata=new FormData(form).serialize();  
+     //    // formdata.append('test',title);         
+                 
+     //     $.ajax({                  
+     //        type: 'POST',                  
+     //        url: "<?php echo (URL); ?>Management/upload_img",                  
+     //        data:formdata,                
+     //        /**                  
+     //                        *必须false才会自动加上正确的Content-Type                  
+     //         */                 
+     //        dataType: 'JSON',  
+     //        contentType: false,                  
+     //        /**                  
+     //        * 必须false才会避开jQuery对 formdata 的默认处理                  
+     //        * XMLHttpRequest会对 formdata 进行正确的处理                  
+     //        */                 
+     //        processData: false,
+     //        success:function(data){
+     //          alert(success);
+     //        }            
+     //    });
+     //    // 将新闻内容传递给后台
+     //    // $.post("<?php echo (URL); ?>Management/upload_img",formdata,function(data){
+     //    //   if(data.state==1){
+     //    //         alert(data.info);
+     //    //         editor.setContent('');
+     //    //       }else{
+     //    //         alert(data.info);
+     //    //       }
+     //    // },'json');
+        
+     // });
+
+     // 删除新闻操作
+     $('.delete2').click(function(){
+      var news_id=$(this).data('id');
+      $.post("<?php echo (URL); ?>Management/delete_news",{'news_id':news_id},function(data){
+        if(data.state==1){
+          alert(data.info);
+          window.location.reload();
+        }else{
+          alert(data.info);
+        }
+      },'json');
+
+     });
+
+     // 筛选新闻操作
+     $('#filtrate').click(function(){
+        var condition=$('#news_filtrate').val();
+        $.post("<?php echo (URL); ?>Management/filtrate_news",{'condition':condition},function(data){
+        if(data.state==1){
+          alert(data.info);
+          window.location.reload();
+        }else{
+          alert(data.info);
+        }
+      },'json');
+     });
+      
+      // 删除用户
+      $('.cutoff').click(function(){
+        var user_id=$(this).data('id');
+        $.post("<?php echo (URL); ?>Management/delete_user",{'user_id':user_id},function(data){
+             if(data.state==1){
+          alert(data.info);
+          window.location.reload();
+        }else{
+          alert(data.info);
+        }
+        },'json');
+      });
+      // 删除圈子操作
+      $('.circle_delete').click(function(){
+        var circle_id=$('.circle_id').val();
+      });
+
+      // 更改圈子管理员
+      $('.change_admin').click(function(){
+         var circle_id=$('.circle_id').val();
+         alert(circle_id);
+      });
+
+      // 圈子信息修改
+      $('.modify_info').click(function(){
+        var circle_id=$('.circle_id').val();
+         alert(circle_id);
+      });
+      // select复选框
+      $('#circle').bind('change',function(){
+            var circle_name=$(this).val();
+            $.post("<?php echo (URL); ?>Test/get_game",{'circle_name':circle_name},function(data){
+                
+                if(data.state==1){
+                    var game=eval("("+data.info+")");
+                    $("#game").children().remove();
+                    $.each(game,function(k,v){
+                      var option = document.createElement("option");
+                      option.innerHTML=v;
+                      $("#game").append(option);
+                      // $("#game").innerHTML="<option>"+v+"</option>";
+                    });
+                     
+                }else{
+                     
+                }
+            },'json');
+          });
+      //   进行帖子筛选
+    $('#post_filtrate').click(function(){
+      var circle_name=$('#circle').val();
+      var circle_game=$('#game').val();
+      var condition=$('#condition').val();
+      // alert(circle_game);
+      $.post("<?php echo (URL); ?>Management/post_filtrate",{'circle_name':circle_name,'circle_game':circle_game,'condition':condition},function(data){
+        if(data.state==1){
+          $('#post-table').children().remove();
+        
+          $.each(data.post,function(k,v){
+
+            var html="<tr><td width='280' class='td1'><a href=<?php echo (URL); ?>User/index?post_id="+v.post_id+">"+v.post_title+"</a></td><td width='80' class='td2'><a href='#'>"+v.post_user+"</a></td><td width='130' class='td3'><p>"+v.post_time+"</p></td><td width='70' class='td4'>浏览</td><td width='80' class='td5'>回复</td><td width='200' class='td6'><div class='delete' data-id="+v.post_id+">删除</div><div class='highlight' data-id="+v.post_id+">加精</div><div class='stick'>置顶</div></td></tr>";
+           $("#post-table").append(html);
+
+
+
+          });
+
+          // alert(data.post[0].post_title);
+          // window.location.reload();
+        }else{
+          alert(data.info);
+        }
+      },'json');
+
+    });
+
+     
+     $(window).load(function(){
+     // 进行帖子加精操作
+       $('.highlight').click(function(){
+        var post_id=$(this).data('id');
+        var index=$(this).index();
+        $.post("<?php echo (URL); ?>Management/boutique",{'post_id':post_id},function(data){
+             if(data.status==1){
+                alert(data.info);
+                // alert(index);
+                // window.location.reload();
+              }else{
+                alert(data.info);
+              }
+        },'json');
+    });
+
+       // 删除帖子操作
+      $('.delete').click(function(){
+         var post_id=$(this).data('id');
+        $.post("<?php echo (URL); ?>Management/delete_post",{'post_id':post_id},function(data){
+            if(data.status==1){
+                alert(data.info);
+                window.location.reload();
+              }else{
+                alert(data.info);
+              }
+        },'json');
+      });
+
+     });
+   
+
+       </script>
+</body>
+</html>

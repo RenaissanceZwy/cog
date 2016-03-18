@@ -1,0 +1,824 @@
+[ 2016-01-23T14:41:38+08:00 ] ::1 /cog/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.027501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.035000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012500s ]
+
+[ 2016-01-23T14:41:41+08:00 ] ::1 /cog/index.php/Home/Login/main_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-01-23T14:42:06+08:00 ] ::1 /cog/index.php/Home/Login/handle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_name` = '赵文奕' AND `User_password` = '123'  [ RunTime:0.0025s ]
+
+[ 2016-01-23T14:42:10+08:00 ] ::1 /cog/index.php/Home/Login/main_login/cat/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:42:37+08:00 ] ::1 /cog/index.php/Home/Login/handle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_name` = '赵文奕' AND `User_password` = 'wen199604018'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT `User_id` FROM `cog_user` WHERE `User_name` = '赵文奕' AND `User_password` = 'wen199604018' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `User_headimg` FROM `cog_user` WHERE `User_name` = '赵文奕' AND `User_password` = 'wen199604018' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-23T14:42:37+08:00 ] ::1 /cog/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007500s ]
+
+[ 2016-01-23T14:42:38+08:00 ] ::1 /cog/index.php/Home/Index/images/circle-position.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T14:42:38+08:00 ] ::1 /cog/index.php/Home/Index/images/circle-numbers.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T14:42:42+08:00 ] ::1 /cog/index.php/Home/Circle/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: select * from cog_circle order by circle_time desc limit 4 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.265004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.265004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.035001s ]
+
+[ 2016-01-23T14:42:43+08:00 ] ::1 /cog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T14:42:43+08:00 ] ::1 /cog/index.php/Home/Circle/img/%E5%88%9D%E5%A7%8B%E5%8C%96%E8%83%8C%E6%99%AF%E5%9B%BE.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:43:05+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0075s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:43:15+08:00 ] ::1 /cog/index.php/Home/Circle/follow_circle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0000s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cog_follow` SET `follow_circle_id`='1' WHERE `user_id` = 10 [ RunTime:0.1000s ]
+
+[ 2016-01-23T14:43:20+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:43:23+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0100s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0025s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T14:44:05+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0025s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0025s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:44:07+08:00 ] ::1 /cog/index.php/Home/Circle/follow_circle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0000s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cog_follow` SET `follow_circle_id`='1' WHERE `user_id` = 10 [ RunTime:0.0500s ]
+
+[ 2016-01-23T14:44:09+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0075s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 85 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T14:53:51+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007500s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 10  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-01-23T14:57:15+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0025s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 10  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: User_headimg D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 78 行.
+NOTIC: [8] Undefined index: User_name D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 79 行.
+NOTIC: [8] Undefined index: User_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 80 行.
+NOTIC: [8] Undefined index: User_note D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:57:16+08:00 ] ::1 /cog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T14:57:43+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 92 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: User_headimg D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 78 行.
+NOTIC: [8] Undefined index: User_name D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 79 行.
+NOTIC: [8] Undefined index: User_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 80 行.
+NOTIC: [8] Undefined index: User_note D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:57:43+08:00 ] ::1 /cog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T14:58:25+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0025s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 10  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0025s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: User_headimg D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 78 行.
+NOTIC: [8] Undefined index: User_name D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 79 行.
+NOTIC: [8] Undefined index: User_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 80 行.
+NOTIC: [8] Undefined index: User_note D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T14:58:25+08:00 ] ::1 /cog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:58:43+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002500s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8] Undefined index: User_headimg D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 78 行.
+NOTIC: [8] Undefined index: User_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 80 行.
+NOTIC: [8] Undefined index: User_note D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:58:43+08:00 ] ::1 /cog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T14:58:58+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 10  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 93 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T14:59:17+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0075s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0025s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user_headimg D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:59:17+08:00 ] ::1 /cog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:59:39+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0025s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user_headimg D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T14:59:39+08:00 ] ::1 /cog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T15:00:32+08:00 ] ::1 /cog/index.php/Home/User/index?post_id=39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_id` = 39  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_comment` WHERE `post_id` = 39 AND `comment_pid` = 0  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: data D:\XAMPP\htdocs\cog\cog\Home\Controller\UserController.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-23T15:00:35+08:00 ] ::1 /cog/index.php/Home/User/collect_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\XAMPP\htdocs\cog\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `cog_user` SET `User_collect`='39' WHERE `User_id` = 10 [ RunTime:0.0325s ]
+
+[ 2016-01-23T15:00:39+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 10  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' ORDER BY post_time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1' AND `post_boutique` = 1 ORDER BY post_time desc  [ RunTime:0.0025s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 10 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_id` = 39  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user_headimg D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-01-23T15:00:39+08:00 ] ::1 /cog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+

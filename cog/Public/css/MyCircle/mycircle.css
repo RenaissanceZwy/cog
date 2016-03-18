@@ -1,0 +1,420 @@
+/*网页初始化css来实现不同浏览器的兼容性*/
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p {
+    margin: 0;
+    padding: 0;
+}
+
+/*网页的body的默认字体以及背景颜色*/
+body {
+    background: rgb(250, 250, 250);
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/*清除超链接a的默认样式*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*清除ul li的默认样式*/
+ul {
+    list-style: none;
+}
+
+.head-container {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #E8E8E8;
+    line-height: 24px;
+    height: 24px;
+    font-weight: 500;
+}
+
+.city {
+    top: 0;
+    left: 150px;
+    position: absolute;
+    height: 100%;
+    width: 200px;
+}
+
+.city li {
+    text-align: center;
+    line-height: 24px;
+    list-style: none;
+    height: 100%;
+    float: left;
+    margin-right: 5px;
+    width: 50px;
+}
+
+.city li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+.selectCity {
+    background: rgba(255, 255, 255, .7);
+    margin-left: 100px;
+    border: 1px solid rgb(216, 216, 216);
+    display: none;
+    width: 280px;
+    height: 180px;
+}
+
+.selectCity li {
+    text-align: center;
+    line-height: 30px;
+    list-style: none;
+    margin-left: 6px;
+    margin-top: 5px;
+    float: left;
+    width: 60px;
+    height: 30px;
+}
+
+.selectCity li:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.selectDistrict {
+    display: none;
+    border: 1px solid rgb(216, 216, 216);
+    margin-left: 140px;
+    width: 280px;
+    height: 150px;
+    background: rgba(255, 255, 255, .7);
+}
+
+.selectDistrict li {
+    text-align: center;
+    line-height: 30px;
+    list-style: none;
+    margin-left: 7px;
+    margin-top: 5px;
+    float: left;
+    width: 60px;
+    height: 30px;
+}
+
+.selectDistrict li:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.username {
+    margin-left: 10px;
+}
+
+.cancle {
+    float: right;
+    margin-right: 5%;
+}
+
+.cancle:hover {
+    text-decoration: underline;
+}
+
+/*nav部分*/
+.nav-container {
+    position: relative;
+    background: rgb(17, 92, 147);
+    margin: 33px auto 20px auto;
+    width: 1200px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+/*nav-logo*/
+.nav-logo {
+    margin-left: 50px;
+    width: 60px;
+    height: 55px;
+    cursor: pointer;
+    float: left;
+}
+
+/*nav-发现另一个你*/
+.nav-caption {
+    width: 200px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+}
+
+/*nav-导航条及按钮*/
+.nav-bar {
+    width: 450px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+}
+
+.nav-bar a {
+    color: rgb(230, 230, 230);
+    margin-left: 20px;
+    width: 80px;
+    height: 55px;
+    float: left;
+    font-size: 16px;
+    line-height: 55px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-bar a:hover {
+    color: white;
+    font-size: 18px;
+}
+
+a.active {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-form {
+    position: absolute;
+    width: 280px;
+    height: 35px;
+    right: 100px;
+    margin-top: 10px;
+}
+
+.nav-form-search {
+    width: 200px;
+    height: 30px;
+    float: left;
+    text-indent: 10px;
+}
+
+.nav-form-submit {
+    border: none;
+    position: absolute;
+    top: 3px;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav-form-submit:hover {
+    color: dodgerblue;
+}
+
+
+
+
+.lowright{
+    position: fixed;
+    float: right;
+    height: 180px;
+    width: 60px;
+    bottom: 50px;
+    right: 30px;
+}
+#back-to-top{
+    overflow: hidden;
+    width: 69px;
+    height: 81px;
+    font-size: 18px;
+    line-height: 58px;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*圈子选择界面*/
+.circle-select-main{
+    margin: 10px auto;
+    width: 1100px;
+    height: 70px;
+}
+.circle-select{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 50px;
+    border-top: 2px solid rgb(23,23,23);
+}
+.circle-select-title{
+    margin-top: 18px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+}
+.circle-select-circle{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 18px;
+    width: 805px;
+    height: 50px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 50px;
+    float: left;
+}
+.circle-select-circle:hover >a{
+    color: orange;
+}
+
+.circle-select-submit{
+    border: none;
+    background: rgb(17, 92, 147);
+    color: whitesmoke;
+    margin-left: 30px;
+    margin-top: 18px;
+    height: 25px;
+    width: 80px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+.circle-select-submit:hover{
+    box-shadow: 0 0 5px rgb(17, 92, 147);
+}
+/*圈子帖子主体部分*/
+.post-main{
+    position: relative;
+    margin: 10px auto;
+    height: auto;
+    width: 800px;
+}
+.post-main-post{
+    position: relative;
+    margin-top: 20px;
+    width: 800px;
+    min-height: 110px !important;
+    max-height: 200px;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 1s;
+}
+.post-left{
+    min-height: 110px !important;
+    max-height: 200px;
+    width: 150px;
+    float: left;
+    overflow: hidden;
+}
+.post-left-main{
+    position: absolute;
+    min-height: 100px;
+    max-height: 200px;
+    width: 150px;
+}
+.post-headportrait{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+}
+.post-discussion{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    width: 28px;
+    height: 22px;
+}
+.post-joinin{
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    font-size: 15px;
+}
+.post-lastpost{
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    width: 28px;
+    height: 22px;
+    margin-bottom: 5px;
+}
+.post-lasttime{
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    font-size: 15px;
+}
+.post-right{
+    min-height: 110px !important;
+    max-height: 200px;
+    width: 650px;
+    float: left;
+}
+.post-game{
+    position: relative;
+    margin-top: 5px;
+    margin-left: 14px;
+    height: 15px;
+    width: 630px;
+    font-size: 15px;
+}
+.post-admin-boutique{
+    position: absolute;
+    top: 0;
+    right: 100px;
+    font-size: 15px;
+    color: blue;
+}
+.post-admin-delete{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 15px;
+    color: blue;
+}
+.post-admin-boutique:hover{
+    text-decoration: underline;
+}
+.post-admin-delete:hover{
+    text-decoration: underline;
+}
+.post-title{
+    margin-left: 14px;
+    margin-top: 5px;
+    height: 29px;
+    width: 600px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(23,23,23);
+}
+.post-title:hover a{
+    text-decoration: underline;
+    color: blue;
+}
+.post-content{
+    margin-left: 14px;
+    margin-top: 5px;
+    min-height: 20px !important;
+    max-height: 43px;
+    width: 600px;
+    font-size: 15px;
+    border: 1px solid darkgrey;
+}
+.post-postpic-main{
+    width: 600px;
+    height: 102px;
+    margin-left: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.post-postpic{
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}

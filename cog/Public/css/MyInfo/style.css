@@ -1,0 +1,42 @@
+.tigger1{
+    position: absolute;
+    width: 110px;
+    height: 36px;
+    top:226px;
+    left: 1000px;
+    border:1px solid black;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.main{
+    width:400px;
+    height:300px;
+    border:1px solid black;
+    background-color: white;
+}
+.main h2{
+    float: left;
+}
+.closeBtn {
+    float: right;
+    width:50px;
+    height:30px;
+    margin: 3px 3px;
+}
+.closeBtn:hover{
+    background-color:deepskyblue;
+}
+.main textarea{
+    margin-left:5px;
+}
+.send1{
+    float: right;
+    width:50px;
+    height:30px;
+    margin:3px 3px;
+}
+.send1:hover{
+    background-color:deepskyblue;
+}

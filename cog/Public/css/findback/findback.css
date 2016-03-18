@@ -1,0 +1,178 @@
+/*CSS样式初始化代码*/
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "微软雅黑", sans-serif;
+    background: rgb(250, 250, 250);
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: none
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+/*连接默认颜色*/
+a {
+    color: #6F6E6A;
+}
+
+/*整体容器*/
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+/*页面主要区域*/
+.main {
+    width: 600px;
+    margin: 0 350px;
+    height: 630px;
+    background-color: rgb(249, 247, 243);
+    position: relative;
+}
+
+/*logo区域*/
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    width: 60px;
+    height: 48px;
+}
+
+/*logo区域中的img*/
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/*h1标签*/
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 270px;
+}
+
+/*h3标签*/
+h3 {
+    position: absolute;
+    top: 95px;
+    left: 230px;
+}
+
+/*找回密码的方式选择ul*/
+.find-mode {
+    position: absolute;
+    top: 180px;
+    left: 160px;
+}
+
+/*找回密码的方式选择li*/
+.find-mode li {
+    width: 140px;
+    height: 30px;,
+font-size: 18 px;
+    float: left;
+    text-align: center;
+    color: rgb(204, 207, 212);
+    cursor: pointer;
+}
+
+/*方式激活*/
+.find-mode .active {
+    color: #DC3C00;
+}
+
+/*具体方式区域*/
+.mode {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 110px;
+    top: 220px;
+}
+
+/*具体找回密码方式区域的表单*/
+.mode input {
+    text-indent: 5px;
+    width: 220px;
+    height: 36px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+}
+
+/*发送验证码按钮*/
+.send {
+    width: 100px;
+    height: 36px;
+    position: absolute;
+    left: 260px;
+    top: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*确定按钮*/
+.ensure {
+    position: absolute;
+    width: 220px;
+    height: 42px;
+    top: 140px;
+    left: 20px;
+    background-color: rgb(92, 185, 92);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*水平线*/
+hr {
+    width: 100%;
+    position: absolute;
+    top: 540px;
+}
+
+/*返回登录按钮*/
+.return {
+    position: absolute;
+    left: 260px;
+    top: 560px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    color: #777677;
+    text-align: center;
+}

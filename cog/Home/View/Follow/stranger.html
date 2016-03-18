@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html  onselectstart="return false">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>游戏圈子-首页</title>
+    <link rel="icon" href="../../../Public/images/icon.ico" >
+    <style>
+    </style>
+</head>
+<body>
+      这里是个人简介，不能够编辑</br>
+      <volist name="user" id="data">
+       <a href="/cog/index.php/Home/Follow/entrance?userid={$data.user}">进入用户{$data.user}</a>
+      </volist>
+        你好用户{$username}
+	  <form method="post" action="/cog/index.php/Home/Follow/follow">
+      <input type="hidden" name="user_id" value="{$user_id}">
+      <input type="submit" name="submit" value="关注">
+      <input type="submit" name="submit" value="取消关注">
+    </form>
+    <script type="text/javascript" src="{$Think.const.HOME_JS}test/jquery.js"></script>
+    <script type="text/javascript" src="{$Think.const.HOME_JS}test/jquery.form.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+</html>

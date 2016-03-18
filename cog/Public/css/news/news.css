@@ -1,0 +1,216 @@
+/*网页初始化css来实现不同浏览器的兼容性*/
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p {
+    margin: 0;
+    padding: 0;
+}
+
+/*网页的body的默认字体以及背景颜色*/
+body {
+    background: rgb(250, 250, 250);
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/*清除超链接a的默认样式*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*清除ul li的默认样式*/
+ul {
+    list-style: none;
+}
+/*nav部分*/
+.nav-container {
+    position: relative;
+    background: rgb(17, 92, 147);
+    margin: 33px auto 20px auto;
+    width: 1200px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+/*nav-logo*/
+.nav-logo {
+    margin-left: 50px;
+    width: 60px;
+    height: 55px;
+    cursor: pointer;
+    float: left;
+}
+
+/*nav-发现另一个你*/
+.nav-caption {
+    width: 200px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+}
+
+/*nav-导航条及按钮*/
+.nav-bar {
+    width: 450px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+}
+
+.nav-bar a {
+    color: rgb(230, 230, 230);
+    margin-left: 20px;
+    width: 80px;
+    height: 55px;
+    float: left;
+    font-size: 16px;
+    line-height: 55px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-bar a:hover {
+    color: white;
+    font-size: 18px;
+}
+
+a.active {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-form {
+    position: absolute;
+    width: 280px;
+    height: 35px;
+    right: 100px;
+    margin-top: 10px;
+}
+
+.nav-form-search {
+    width: 200px;
+    height: 30px;
+    float: left;
+    text-indent: 10px;
+}
+
+.nav-form-submit {
+    border: none;
+    position: absolute;
+    top: 3px;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav-form-submit:hover {
+    color: dodgerblue;
+}
+
+
+.leader{
+    width: 1100px;
+    margin: 5px auto;
+    color: #000;
+}
+/*页面主体*/
+.main{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin:0 auto;
+    border:2px solid gray;
+}
+/*游戏介绍*/
+.main-game{
+    width:660px;
+    height:auto;
+    margin-top:3px;
+    margin-left: 3px;
+    border:1px solid gray;
+}
+/*标题*/
+.main-game-p{
+    width:600px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+/*内容*/
+.main-game-content{
+    width:630px;
+    height:auto;
+    margin:10px auto;
+    border:1px solid gray;
+}
+/*来源以及浏览次数*/
+.main-game-content-p1{
+    text-align: center;
+    color: gray;
+    margin-top:3px;
+}
+/*帖子主要内容*/
+.main-game-content-text{
+    width:90%;
+    height: auto;
+    margin:10px auto;
+    border:1px dashed gray;
+}
+/*帖子中的图片*/
+.main-game-content-img{
+    width:200px;
+    height: 200px;
+    margin:40px auto;
+    box-shadow: 0 0 5px gray;
+}
+/*赞与踩*/
+.button{
+    margin: 40px auto;
+    width: 150px;
+    height: 50px;
+}
+.button1 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.button2 {
+    margin-left: 42px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.main-news{
+    left: 670px;
+    bottom: 480px;
+    position: relative;
+    border: 1px solid yellow;
+    width:300px;
+    height:auto;
+}
+.main-news1{
+     width:300px;
+     height: 204px;
+    border:1px dashed gainsboro;
+ }
+.main-news2{
+    width:300px;
+    height: 300px;
+    border:1px dashed gainsboro;
+    margin-top:9px;
+}
+.main-news2-p{
+    height:15px;
+    width:300px;
+    border-bottom:2px solid black;
+    line-height:15px;
+    font-size: 15px;
+    text-align: center;
+}
+.main-news3{
+    width:300px;
+    height: 204px;
+    border:1px dashed gainsboro;
+    margin-top:9px;
+}

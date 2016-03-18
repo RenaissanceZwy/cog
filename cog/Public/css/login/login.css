@@ -1,0 +1,138 @@
+/*CSS样式初始化代码*/
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "微软雅黑", sans-serif;
+    background: rgb(250, 250, 250);
+}
+
+a {
+    text-decoration: none
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+/*按钮震动CSS 只有Chrome等浏览器支持*/
+@-webkit-keyframes buzz-out {
+    0% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+    }
+    25% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+    }
+    75% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+    }
+    100% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+    }
+}
+
+/*背景图片*/
+.bg-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/*本网页整体容器*/
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*logo以及游戏圈子标语*/
+.logo {
+    position: absolute;
+    color: white;
+    left: 5%;
+    font-size: 24px;
+    top: 20px;
+    width: 200px;
+    height: 54px;
+}
+
+/*logo中的img图片*/
+.logo img {
+    width: 90px;
+    height: 100%;
+}
+
+/*口号发现另一个你*/
+.slogan {
+    position: absolute;
+    display: none;
+    left: 50%;
+    margin-left: -200px;
+    height: 80px;
+    width: 400px;
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    text-align: center;
+}
+
+/*登陆以及注册按钮*/
+#login, #register {
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    left: 40%;
+    margin-left: -45px;
+    top: 560px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/*注册按钮*/
+#register {
+    left: 60%;
+    margin-left: -45px;
+}
+
+/*登陆，注册按钮中的超链接*/
+#login a, #register a {
+    color: white;
+}
+
+/*登录，注册按钮鼠标放置时候会震动，但只有chrome等支持*/
+#login:hover, #register:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-animation-name: buzz-out;
+    -webkit-animation-duration: 0.25s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+}

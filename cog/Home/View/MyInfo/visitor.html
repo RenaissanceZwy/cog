@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的资料</title>
+    <link rel="stylesheet" href="{$Think.const.HOME_CSS}MyInfo/my-information.css">
+    <link rel="stylesheet" href="{$Think.const.HOME_CSS}MyInfo/css/style.css">
+</head>
+<body>
+   <div class="nav-container">
+      <img class="nav-logo" src="" title="logo">
+      <img class="nav-caption" src="" title="发现另一个你！">
+    <ul class="nav-bar">
+        <li><a href="{$Think.const.URL}Index/index">首页</a></li>
+        <li><a href="{$Think.const.URL}Circle/index">圈子</a></li>
+        <li><a href="{$Think.const.URL}Game/index">游戏</a></li>
+        <li><a href="{$Think.const.URL}MyCircle/index">我的圈子</a></li>
+    </ul>
+    <volist name="res_user" id="user">
+       <a href="{$Think.const.URL}MyInfo/index" class="touxiang"><img src="/cog/{$user.user_headimg}"></a>
+    </div>
+    
+      <div class="user-container">
+               <img src="/cog/{$user.user_headimg}"title="头像" class="avator">
+                 <h1>{$user.user_name}</h1>
+                 <img src="{$Think.const.HOME_IMGS}MyInfo/boy.png" class="gender-logo">
+                 <p class="fix-position"><span>{$user.user_addr}</span></p>
+                 <p class="circle-age"><span>圈龄:</span><span>1.5年</span></p>
+                 <p class="my-level"><span>等级：</span><span>{$user.user_level}</span></p>
+          <div class="attention">
+              <span>关注:<a href="#">99</a></span>
+              <span>被关注:<a href="#">100</a></span>
+          </div>
+         <div class="subscribe">
+            关注列表</br>
+            <volist name="res_subscribe" id="data">
+              <volist name="data" id="subscribe">
+             
+              <span>
+              <a href="{$Think.const.URL}MyInfo/index?user_id={$subscribe.user_id}">{$subscribe.user_name}</a> 
+      
+            <!--   <input type="button" class="cancel_subscribe" value="取消关注" data-id="{$subscribe.user_id}"/> --> </br>
+              </span>
+             
+              </volist>
+            </volist>
+           </div>
+          <div class="subscribed">
+            被关注列表</br>
+             <volist name="res_subscribed" id="data">
+             
+              <span>
+              <a href="{$Think.const.URL}MyInfo/index?user_id={$data.user_id}">{$data.user_name}</a> </br>
+             <!--  <?php if($data['check_follow']){ ?>
+              <input type="button" value="取消关注" data-id="{$data.user_id}" class="cancel_subscribe" /></br>
+              <?php }else{ ?>
+              <input type="button" value="关注" data-id="{$data.user_id}" class="btn_subscribe" /></br>
+              <?php } ?> -->
+             </span>
+             
+            </volist>
+          </div>
+          <div class="clear-float"></div>
+          <hr size="3" width="78%" color="black">
+          <div class=information>
+              <div class="concerned-circle">关注的圈子：
+                <volist name="res_follow" id="follow">
+                <a href="{$Think.const.URL}Circle/circlesquare?circle_id={$follow.circle_id}">{$follow.circle_name}</a>
+              </volist>
+              </div>
+              <div class="instruction">个人说明:&nbsp;&nbsp;{$user.user_note}</div>
+            </div>
+          <a class="private-chat change" href="#"  style="display:none">查看私聊</a>
+          <a class="modify"  href="#" target="_blank" style="display:none">修改个人信息
+          </a>
+      </div>
+    </volist>
+   <div class="container">
+            <div class="actions-container" >
+                <ul class="actions-select">
+
+                    <li class="active2">动态</li>
+                    <li>发帖</li>
+                    <li>回复 {$mention}</li>
+                    <li style="border-right: 1px solid black" >TA收藏的贴子</li>
+                </ul>
+                <div class="clear-float"></div>
+                <!--动态-->
+                <div class="tabcontent">
+                   <volist name="res_post" id="post">
+                    <div class="send">
+                        <p class="font">发帖</p>
+                        <div class="note-content">
+                            <p class="head"><span><a href="{$Think.const.URL}User/index/post_id={$post.post_id}">{$post.post_title}</a></span><span style="left:410px ">·<a href="#">{$post.circle_name}</a></span><span  style="margin-left:610px">·{$post.post_game}</span><span style="margin-left: 800px">{$post.post_time}</span></p>
+                            <p class="note-subcontent">{$post.post_content}</p>
+                        </div>
+                    </div>
+                  </volist>
+                  <volist name="res_reply" id="reply">   
+                    <div class="reply">
+                        <p class="font">回复</p>
+                        <a  href="#" class="name">
+                           {$reply.user_name}
+                        </a>
+                        <div class="note-content">
+                            <p class="head"><span><a href="{$Think.const.URL}User/index/post_id={$reply.post_id}">{$reply.post_title}</a></span><span style="left:410px ">·<a href="#">{$reply.circle_name}</a></span><span  style="margin-left:610px">·{$reply.post_game}</span><span style="margin-left: 800px">{$reply.comment_time}</span></p>
+                            <p class="note-subcontent">{$reply.comment_content}</p>
+                        </div>
+                    </div>
+                  </volist>
+                    
+                </div>
+            <!--发帖-->
+                <div class="tabcontent" style="display: none">
+                  <volist name="res_post" id="post">
+                    <div  class="post-note">
+                            <p class="head"><span><a href="{$Think.const.URL}User/index/post_id={$post.post_id}">{$post.post_title}</a></span>
+                              <span style="left:410px ">·<a href="#">{$post.circle_name}</a></span>
+                              <span  style="margin-left:610px">·{$post.post_game}</span>
+                              <span style="margin-left: 800px">{$post.post_time}</span></p>
+                            <p class="note-subcontent">{$post.post_content} </p>
+                    </div>
+                   </volist>
+                </div>
+
+
+     <!--回复帖子-->
+                <div class="tabcontent" style="display: none">
+
+                  <!-- 用户未读信息 -->
+                  <volist name="res_mention" id="reply">
+    
+                        <div class="reply-note">
+                            <p class="head"><span><a href="{$Think.const.URL}User/index/post_id={$post.post_id}">{$reply.post_title}</a></span><span style="left:410px ">·<a href="#">{$reply.circle_name}</a></span><span  style="margin-left:610px">·{$reply.post_game}</span><span style="margin-left: 800px">{$reply.comment_time}</span></p>
+                            <p class="reply-note-subcontent"><a href="#">:{$reply.user_name}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$reply.comment_content}</p>
+                        </div>
+                        
+                  </volist>
+                  <volist name="res_reply" id="reply">
+    
+                        <div class="reply-note">
+                            <p class="head"><span><a href="{$Think.const.URL}User/index/post_id={$post.post_id}">{$reply.post_title}</a></span><span style="left:410px ">·<a href="#">{$reply.circle_name}</a></span><span  style="margin-left:610px">·{$reply.post_game}</span><span style="margin-left: 800px">{$reply.comment_time}</span></p>
+                            <p class="reply-note-subcontent"><a href="#">:{$reply.user_name}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$reply.comment_content}</p>
+                        </div>
+                        
+                  </volist>
+                </div>
+                <!--我收藏的帖子-->
+                <div class="tabcontent" style="display: none">
+                  <volist name="res_collect" id="collect">
+                    <volist name="collect" id="data">
+                    <div class="fine-post">
+                        <div class="post-left">
+                            <div class="post-left-main">
+                                <img class="post-headportrait" src="/cog/{$data.user_headimg}">
+                                <p class="fine">{$data.user_name}</p>
+                            </div>
+                        </div>
+                        <div class="post-right">
+                            <div class="post-game">
+                                <p><a>{$data.circle_name}</a>-><a>{$data.post_game}</a>-><a>{$data.post_server}</a></p>
+                            </div>
+                            <div class="post-title">
+                                <a href="{$Think.const.URL}User/index?post_id={$data.post_id}">{$data.post_title}</a>
+                            </div>
+                            <div class="post-content">
+                                <p>{$data.post_content}</p>
+                            </div>
+                            <div class="post-postpic-main">
+                                <!-- <div class="post-postpic">
+                                    <img class="post-postpic" src="{$Think.const.HOME_IMGS}MyInfo/headportrait.jpg">
+                                </div>
+                                <div class="post-postpic">
+                                    <img class="post-postpic" src="{$Think.const.HOME_IMGS}MyInfo/headportrait.jpg">
+                                </div>
+                                <div class="post-postpic">
+                                    <img class="post-postpic" src="{$Think.const.HOME_IMGS}MyInfo/headportrait.jpg">
+                                </div> -->
+                            </div>
+                            <div class="fine-information">
+                                <p class="fine-joinin">阅读：<a>888</a></p>
+                                <p class="fine-lasttime">最后回复：<a>{$data.post_time}</a></p>
+                            </div>
+                        </div>
+                    </div>
+                   </volist>
+                   </volist>
+
+                </div>
+                </div>
+
+
+       <!--查看私信-->
+   <div class="tabcontent1" style="display:none">
+       <p class="tabcontent1-p">返回>></p>
+       <div class="sixin">
+           <img src="images/touxiang.png" >
+           <div class="clear-float"></div>
+           <p class="sixin-p1"><a href="">私信人id</a></p>
+           <div class="clear-float"></div>
+           <p class="sixin-p2">私信人ID 私信您:</p>
+           <div class="clear-float"></div>
+           <div class="sixin-neirong">
+               私信内容
+           </div>
+           <p class="sixin-p3" id="siliao">点击回复→</p>
+           <p class="sixin-p3">时间：2015年12月25日15:18</p>
+       </div>
+   </div>
+</div>
+
+
+   <div >
+       <!--<div id="siliao" class="tigger">私聊</div>-->
+       <div class="main">
+           <h2>To 私信人id</h2>
+           <input type="button" value="关闭" href="javascript:void(0)" id="close" class="closeBtn">
+           <textarea rows="10" cols="49" placeholder="在这里输入内容">输入私信内容</textarea>
+           <input type="button" value="发送" name="send" class="send1" >
+       </div>
+   </div>
+
+<script src="{$Think.const.HOME_JS}MyInfo/jquery.js"></script>
+<script>
+    $(".actions-select  li").click(function(){
+        var index = $(this).index();
+        $('.tabcontent').eq(index).show().siblings('.tabcontent').hide();
+        $(this).addClass("active2").siblings().removeClass("active2");
+    });
+
+       $(".change").click(function(){
+           $('.tabcontent1').show();
+           $('.actions-container').hide();
+           $(this).addClass("active2");
+           $(".tabcontent1-p").removeClass("active2");
+       });
+
+       $(".tabcontent1-p").click(function(){
+           $('.actions-container').show();
+           $('.tabcontent1').hide();
+           $(this).addClass("active2");
+           $(".change").removeClass("active2");
+       });
+
+   </script>
+
+
+   <!--弹窗js-->
+   <script src="{$Think.const.HOME_JS}MyInfo/jquery-1.4.2.min.js"></script>
+   <script src="{$Think.const.HOME_JS}MyInfo/popup_layer.js"></script>
+   <script>
+       $(document).ready(function(){
+
+           var t9 = new PopupLayer({
+               trigger:"#siliao",
+               popupBlk:".main",
+               closeBtn:"#close",
+               useOverlay:true,
+               useFx:true,
+               offsets:{
+                   x:0,
+                   y:-41
+               }
+           });
+           t9.doEffects = function(way){
+               if(way == "open"){
+                   this.popupLayer.css({opacity:0.3}).show(300,function(){
+                       this.popupLayer.animate({
+                           left:($(document).width() - this.popupLayer.width())/2,
+                           top:(document.documentElement.clientHeight - this.popupLayer.height())/2 + $(document).scrollTop(),
+                           opacity:0.8
+                       },300,function(){this.popupLayer.css("opacity",1)}.binding(this));
+                   }.binding(this));
+               }
+               else{
+                   this.popupLayer.animate({
+                       left:this.trigger.offset().left,
+                       top:this.trigger.offset().top,
+                       opacity:0.1
+                   },{duration:200,complete:function(){this.popupLayer.css("opacity",1);this.popupLayer.hide()}.binding(this)});
+               }
+           }
+       });
+   </script>
+
+  <!--  赵文奕的js -->
+
+  <script src="{$Think.const.HOME_JS}MyInfo/jquery.js"></script>
+  <script src="{$Think.const.HOME_JS}MyInfo/jquery.form.js"></script>
+
+  <script type="text/javascript">
+  $('.cancel_subscribe').click(function(){
+    var follow_id=$(this).attr('data-id');
+    $.post("{$Think.const.URL}MyInfo/cancel_subscribe",{"follow_id":follow_id},function(data){
+      if(data.state==1){
+          alert('取消关注成功');
+          window.location.reload();
+      }else{
+        alert(data.info);
+
+      }
+
+    },'json');
+    
+
+  });
+  $('.btn_subscribe').click(function(){
+    var follow_id=$(this).attr('data-id');
+    $.post("{$Think.const.URL}MyInfo/subscribe",{"follow_id":follow_id},function(data){
+      if(data.state==1){
+          alert('关注成功');
+          window.location.reload();
+      }else{
+        alert(data.info);
+
+      }
+
+    },'json');
+    
+
+  });
+  </script>
+
+</body>
+</html>

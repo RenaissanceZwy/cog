@@ -1,0 +1,178 @@
+
+.container {
+    display: none;
+    background: rgb(249, 247, 243);
+    width: 900px;
+    height: 600px;
+    margin: 10px auto;
+    box-shadow: 0 0 5px gray;
+    position: relative;
+    top: -700px;
+}
+
+#logo-img {
+    position: absolute;
+    right: 10px;
+}
+
+h1 {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    font-size: 25px;
+}
+
+.username {
+    position: absolute;
+    left: 110px;
+    top: 100px;
+    width: 300px;
+    height: 36px;
+}
+
+.username p, .gender p, .email p, .position p, .personal-note p {
+    height: 36px;
+    line-height: 36px;
+    font-size: 15px;
+    font-weight: 600;
+    float: left;
+}
+
+.username .username-set {
+    width: 140px;
+    height: 30px;
+    margin-top: 3px;
+    margin-left: 50px;
+    border: 2px solid #c4c4c4;
+    float: left;
+}
+
+.gender {
+    position: absolute;
+    left: 110px;
+    top: 150px;
+    width: 300px;
+    height: 36px;
+}
+
+.gender label {
+    font-weight: 600;
+    margin-left: 60px;
+    margin-top: 22px;
+    width: 40px;
+    height: 20px;
+    float: left;
+}
+
+.photo {
+    position: absolute;
+    top: 100px;
+    left: 520px;
+    width: 100px;
+    height: 100px;
+}
+
+#post {
+    z-index: 3;
+    filter: alpha(opacity:0);
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 160px;
+    left: 640px;
+}
+
+.birthday {
+    position: absolute;
+    left: 110px;
+    top: 230px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.birthday select {
+    margin-left: 30px;
+}
+
+.email {
+    position: absolute;
+    left: 110px;
+    top: 280px;
+}
+
+.email input {
+    width: 360px;
+    height: 30px;
+    margin-left: 40px;
+    margin-top: 15px;
+    border: 2px solid #c4c4c4;
+    float: left;
+}
+
+.position {
+    position: absolute;
+    left: 110px;
+    top: 350px;
+}
+
+.position select {
+    margin-left: 32px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.personal-note {
+    position: absolute;
+    left: 110px;
+    top: 400px;
+}
+
+.personal-note-content {
+    resize: none;
+    border: 2px solid #c4c4c4;
+    width: 450px;
+    height: 100px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#complete {
+    font-size: 17px;
+    cursor: pointer;
+    color: whitesmoke;
+    background: rgb(94, 198, 96);
+    border: none;
+    position: absolute;
+    left: 390px;
+    width: 140px;
+    height: 40px;
+    bottom: 20px;
+}
+
+/*判断邮箱格式是否正确的label元素*/
+#isEmail {
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    right: -120px;
+    top: 2px;
+    font-size: 14px;
+}
+
+#upload-img {
+    border-radius: 5px;
+    background: rgb(94, 198, 96);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 0 1px green;
+    line-height: 30px;
+    position: absolute;
+    right: 159px;
+    top: 160px;
+    width: 100px;
+    height: 30px;
+}

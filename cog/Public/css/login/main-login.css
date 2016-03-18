@@ -1,0 +1,190 @@
+/*CSS样式初始化代码*/
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "微软雅黑", sans-serif;
+    background: rgb(250, 250, 250);
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: none
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+/*超链接设置默认颜色*/
+a {
+    color: #6F6E6A;
+}
+
+/*整体容器*/
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+/*主要区域*/
+.main {
+    width: 600px;
+    height: 630px;
+    margin: 0 350px;
+    background-color: rgb(249, 247, 243);
+    position: relative;
+}
+
+/*logo区域*/
+.logo {
+    position: absolute;
+    top: 70px;
+    left: 180px;
+    width: 60px;
+    height: 48px;
+}
+
+/*logo区域的ing图片*/
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/*h1标签*/
+h1 {
+    position: absolute;
+    top: 70px;
+    left: 270px;
+}
+
+/*h3标签*/
+h3 {
+    position: absolute;
+    top: 115px;
+    left: 230px;
+}
+
+/*登录模式选择ul*/
+.login-mode {
+    position: absolute;
+    top: 220px;
+    left: 210px;
+}
+
+/*登录模式选择的两个li*/
+.login-mode li {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    float: left;
+    text-align: center;
+    color: rgb(204, 207, 212);
+    cursor: pointer;
+}
+
+/*登录模式被选择时候的active状态*/
+.login-mode .active {
+    color: rgb(111, 110, 106);
+}
+
+/*具体的账号登录与微信登录区域*/
+.mode {
+    position: absolute;
+    width: 380px;
+    height: 130px;
+    left: 110px;
+    top: 260px;
+}
+
+/*登录区域的表单元素*/
+.mode input {
+    text-indent: 5px;
+    width: 280px;
+    height: 36px;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+}
+
+/*登录按钮*/
+#login {
+    position: absolute;
+    width: 280px;
+    height: 42px;
+    top: 400px;
+    left: 160px;
+    background-color: rgb(92, 185, 92);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*水平线*/
+hr {
+    width: 100%;
+    position: absolute;
+    top: 490px;
+}
+
+/*忘记密码与免费注册ul*/
+.forget-password {
+    position: absolute;
+    top: 520px;
+    left: 220px;
+}
+
+/*忘记密码与免费注册li*/
+.forget-password li {
+    width: 70px;
+    height: 24px;
+    font-size: 14px;
+    float: left;
+    text-align: center;
+    color: #6F6E6A;
+    cursor: pointer;
+}
+
+#resname {
+    line-height: 33px;
+    width: 120px;
+    height: 33px;
+    position: absolute;
+    left: 340px;
+    top: 20px;
+}
+
+#respwd {
+    line-height: 33px;
+    width: 120px;
+    height: 33px;
+    position: absolute;
+    left: 340px;
+    top: 82px;
+}

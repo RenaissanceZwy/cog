@@ -1,0 +1,258 @@
+/*CSS样式初始化代码*/
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "微软雅黑", sans-serif;
+    background: rgb(250, 250, 250);
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: none
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+/*链接默认样式*/
+a {
+    color: #6F6E6A;
+}
+
+/*整体容器*/
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+/*具体区域*/
+.main {
+    width: 600px;
+    margin: 0 350px;
+    height: 630px;
+    background-color: rgb(249, 247, 243);
+    position: relative;
+}
+
+/*logo区域*/
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    width: 60px;
+    height: 48px;
+}
+
+/*logo区域的图片*/
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/*h1标签*/
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 270px;
+}
+
+/*h3标签*/
+h3 {
+    position: absolute;
+    top: 95px;
+    left: 230px;
+}
+
+/*注册模式ul*/
+.register-mode {
+    position: absolute;
+    top: 180px;
+    left: 210px;
+}
+
+/*注册模式中的li*/
+.register-mode li {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    float: left;
+    text-align: center;
+    color: rgb(204, 207, 212);
+    cursor: pointer;
+}
+
+/*注册模式按钮被选择*/
+.register-mode .active {
+    color: rgb(111, 110, 106);
+}
+
+/*具体注册模块区域*/
+.mode {
+    position: absolute;
+    width: 380px;
+    height: 400px;
+    left: 110px;
+    top: 220px;
+}
+
+/*模块区域的中表单元素*/
+.mode input {
+    text-indent: 5px;
+    width: 280px;
+    height: 36px;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+}
+
+/*判断是否为电话的label元素*/
+#isPhone {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    right: -70px;
+    top: 21px;
+    font-size: 14px;
+}
+
+/*判断验证码是否正确的label元素*/
+#isCode {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    right: -10px;
+    top: 75px;
+    font-size: 14px;
+}
+
+/*判断邮箱格式是否正确的label元素*/
+#isEmail {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    right: -70px;
+    top: 21px;
+    font-size: 14px;
+}
+
+/*判断用户名格式是否正确的label元素*/
+#isName {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    right: -70px;
+    top: 73px;
+    font-size: 14px;
+}
+
+/*判断密码输入框格式是否正确的label元素*/
+#isPassword1 {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    right: -70px;
+    top: 127px;
+    font-size: 14px;
+}
+
+/*判断两次密码是否一致的label元素*/
+#isSamePassword {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    right: -70px;
+    top: 183px;
+    font-size: 14px;
+}
+
+/*同意服务条款*/
+.mode p {
+    color: rgb(82, 87, 88);
+    font-size: 12px;
+    position: absolute;
+    left: 50px;
+}
+
+/*发送手机验证码按钮*/
+#send {
+    width: 100px;
+    height: 36px;
+    position: absolute;
+    left: 190px;
+    top: 128px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*注册按钮*/
+.register {
+    position: absolute;
+    width: 280px;
+    height: 42px;
+    left: 50px;
+    background-color: rgb(92, 185, 92);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*水平线*/
+hr {
+    width: 100%;
+    position: absolute;
+    top: 540px;
+}
+
+/*返回登录按钮*/
+.return {
+    position: absolute;
+    left: 260px;
+    top: 560px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    color: #777677;
+    text-align: center;
+}
+
+/*验证码*/
+#checkCode {
+    position: absolute;
+    top: 75px;
+    left: 200px;
+}

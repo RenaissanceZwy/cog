@@ -1,0 +1,295 @@
+/*网页初始化css来实现不同浏览器的兼容性*/
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p {
+    margin: 0;
+    padding: 0;
+}
+
+/*网页的body的默认字体以及背景颜色*/
+body {
+    background: rgb(250, 250, 250);
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/*清除超链接a的默认样式*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*清除ul li的默认样式*/
+ul {
+    list-style: none;
+}
+/*nav部分*/
+.nav-container {
+    position: relative;
+    background: rgb(17, 92, 147);
+    margin: 33px auto 20px auto;
+    width: 1200px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+/*nav-logo*/
+.nav-logo {
+    margin-left: 50px;
+    width: 60px;
+    height: 55px;
+    cursor: pointer;
+    float: left;
+}
+
+/*nav-发现另一个你*/
+.nav-caption {
+    width: 200px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+}
+
+/*nav-导航条及按钮*/
+.nav-bar {
+    width: 450px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+}
+
+.nav-bar a {
+    color: rgb(230, 230, 230);
+    margin-left: 20px;
+    width: 80px;
+    height: 55px;
+    float: left;
+    font-size: 16px;
+    line-height: 55px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-bar a:hover {
+    color: white;
+    font-size: 18px;
+}
+
+a.active {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-form {
+    position: absolute;
+    width: 280px;
+    height: 35px;
+    right: 100px;
+    margin-top: 10px;
+}
+
+.nav-form-search {
+    width: 200px;
+    height: 30px;
+    float: left;
+    text-indent: 10px;
+}
+
+.nav-form-submit {
+    border: none;
+    position: absolute;
+    top: 3px;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav-form-submit:hover {
+    color: dodgerblue;
+}
+
+
+
+/*最近浏览*/
+.main-recent{
+    overflow: hidden;
+    position: relative;
+    width:1100px;
+    /*height: auto;*/
+    height: 250px;
+    margin:5px auto;
+    border:2px solid gray;
+}
+.main-recent h3{
+    padding-left: 60px;
+    font-weight: 500;
+    line-height:40px;
+    text-align: left;
+}
+.main-recent-p1{
+    position: absolute;
+    right: 30px;
+    width: 110px;
+    height: 20px;
+    line-height:20px;
+    font-size: 16px;
+    color: #000;
+}
+.main-recent-p1:hover{
+    cursor: pointer;
+   color:gray;
+}
+.main-recent-circle{
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 70px;
+    width:240px;
+    height:170px;
+    border:1px solid gray;
+}
+.main-recent-circle img{
+    width:220px;
+    height:135px;
+    margin:0 10px;
+}
+.main-recent-p2{
+    width:120px;
+    line-height:20px;
+    text-align: center;
+    float: left;
+    margin-top:5px;
+}
+.main-recent-p3{
+    width:100px;
+    line-height:20px;
+    text-align: left;
+    float: right;
+    margin-top:5px;
+}
+.main-recent-p2:hover{
+    color:gray;
+}
+
+/*最新浏览*/
+.main-new{
+    overflow: hidden;
+    position: relative;
+    width:1100px;
+    /*height: auto;*/
+    height: 250px;
+    margin:50px auto;
+    border:2px solid gray;
+}
+.main-new h3{
+    padding-left: 60px;
+    font-weight: 500;
+    line-height:40px;
+    text-align: left;
+}
+.main-new-p1{
+    position: absolute;
+    right: 30px;
+    width: 110px;
+    height: 20px;
+    line-height:20px;
+    font-size: 16px;
+    color: #000;
+}
+.main-new-p1:hover{
+    cursor: pointer;
+    color:gray;
+}
+.main-new-circle{
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 70px;
+    width:240px;
+    height:170px;
+    border:1px solid gray;
+}
+.main-new-circle img{
+    width:220px;
+    height:135px;
+    margin:0 10px;
+}
+.main-new-p2{
+    width:120px;
+    line-height:20px;
+    text-align: center;
+    float: left;
+    margin-top:5px;
+}
+.main-new-p3{
+    width:100px;
+    line-height:20px;
+    text-align: left;
+    float: right;
+    margin-top:5px;
+}
+.main-new-p2:hover{
+    color:gray;
+}
+
+
+
+/*热门圈子*/
+.main-hot{
+    overflow: hidden;
+    position: relative;
+    width:1100px;
+    /*height: auto;*/
+    height: 250px;
+    margin:50px auto;
+    border:2px solid gray;
+}
+.main-hot h3{
+    padding-left: 60px;
+    font-weight: 500;
+    line-height:40px;
+    text-align: left;
+}
+.main-hot-p1{
+    position: absolute;
+    right: 30px;
+    width: 110px;
+    height: 20px;
+    line-height:20px;
+    font-size: 16px;
+    color: #000;
+}
+.main-hot-p1:hover{
+    cursor: pointer;
+    color:gray;
+}
+.main-hot-circle{
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 70px;
+    width:240px;
+    height:170px;
+    border:1px solid gray;
+}
+.main-hot-circle img{
+    width:220px;
+    height:135px;
+    margin:0 10px;
+}
+.main-hot-p2{
+    width:120px;
+    line-height:20px;
+    text-align: center;
+    float: left;
+    margin-top:5px;
+}
+.main-hot-p3{
+    width:100px;
+    line-height:20px;
+    text-align: left;
+    float: right;
+    margin-top:5px;
+}
+.main-hot-p2:hover{
+    color:gray;
+}
+

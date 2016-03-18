@@ -1,0 +1,3089 @@
+[ 2016-03-14T22:54:05+08:00 ] ::1 /cog/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.100005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.180010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.180010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.027002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.072004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.072004s ]
+
+[ 2016-03-14T22:54:12+08:00 ] ::1 /cog/index.php/Home//Register/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: name D:\XAMPP\htdocs\cog\cog\Home\Controller\RegisterController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.9611s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_name` = null  [ RunTime:0.0570s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T22:54:23+08:00 ] ::1 /cog/index.php/Home/Login/check_name
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_name` = 'w'  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T22:54:25+08:00 ] ::1 /cog/index.php/Home/Login/check_name
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_name` = 'www'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:54:30+08:00 ] ::1 /cog/index.php/Home/Register/mail_regist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: INSERT INTO `cog_user` (`User_name`,`User_Email`,`User_reg_time`,`User_password`) VALUES ('www','1','2016-03-14','www') [ RunTime:0.1710s ]
+SQL: SELECT `User_id` FROM `cog_user` WHERE `User_name` = 'www' AND `User_Email` = 1 AND `User_reg_time` = '2016-03-14' AND `User_password` = 'www' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0820s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0390s ]
+SQL: INSERT INTO `cog_follow` (`user_id`,`follow_id`,`followed_id`,`follow_circle_id`) VALUES ('16','0','0','0') [ RunTime:0.0160s ]
+
+[ 2016-03-14T22:54:33+08:00 ] ::1 /cog/index.php/Home/Information/information/cat/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T22:55:03+08:00 ] ::1 /cog/index.php/Home/Information/information_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0070s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\XAMPP\htdocs\cog\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `cog_user` SET `User_sex`='on',`User_note`='111',`User_birth`='2013-1=3',`User_addr`='广东省潮州市湘桥区',`User_headimg`='cog/Public/imgs/user-headimg/head_img_6.png' WHERE `User_name` = 'www' [ RunTime:0.1620s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT `User_id` FROM `cog_user` WHERE `User_name` = 'www' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `User_headimg` FROM `cog_user` WHERE `User_name` = 'www' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:55:05+08:00 ] ::1 /cog/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_news` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 3   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.1570s ]
+NOTIC: [8] Undefined variable: circle_res D:\XAMPP\htdocs\cog\cog\Home\Controller\IndexController.class.php 第 39 行.
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0930s ]
+SQL: select * from cog_circle order by circle_time desc limit 4 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: select cog_post.post_id,circle_name,post_time,post_title,post_content,count(cog_comment.post_id) as num
+    	      from cog_post,cog_comment,cog_circle
+    	      where cog_post.post_id=cog_comment.post_id and
+    	            cog_post.post_circle_id=cog_circle.circle_id
+    	      group by  cog_comment.post_id
+    	      order by num desc
+    	  [ RunTime:0.1140s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: select *
+            from cog_circle
+            where circle_location like '%%'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_num D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.192011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.192011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:55:07+08:00 ] ::1 /cog/index.php/Home/MyInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0310s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: select cog_post.* ,circle_name
+		      from cog_post,cog_circle 
+		      where cog_post.post_circle_id=cog_circle.circle_id and
+		      cog_post.post_user=16 
+		      order by cog_post.post_time desc [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0040s ]
+SQL: select cog_comment.*,post_title,User_name,circle_name,post_game
+		      from cog_comment,cog_post,cog_user,cog_circle
+		      where cog_comment.comment_user_id=cog_user.User_id and
+		      cog_comment.post_id=cog_post.post_id and
+		      cog_comment.post_circle_id=cog_circle.circle_id and 
+		      cog_comment.comment_puser_id=16 and 
+		      cog_comment.comment_view=1 
+		      order by cog_comment.comment_time desc [ RunTime:0.0010s ]
+SQL: select cog_comment.*,post_title,User_name,circle_name,post_game
+		      from cog_comment,cog_post,cog_user,cog_circle
+		      where cog_comment.comment_user_id=cog_user.User_id and
+		      cog_comment.post_id=cog_post.post_id and
+		      cog_comment.post_circle_id=cog_circle.circle_id and 
+		      cog_comment.comment_puser_id=16 and 
+		      cog_comment.comment_view=0 
+		      order by cog_comment.comment_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and cog_circle.circle_id=cog_post.post_circle_id' at line 5
+
+[ 2016-03-14T22:55:11+08:00 ] ::1 /cog/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_news` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0160s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: circle_res D:\XAMPP\htdocs\cog\cog\Home\Controller\IndexController.class.php 第 39 行.
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0010s ]
+SQL: select * from cog_circle order by circle_time desc limit 4 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+SQL: select cog_post.post_id,circle_name,post_time,post_title,post_content,count(cog_comment.post_id) as num
+    	      from cog_post,cog_comment,cog_circle
+    	      where cog_post.post_id=cog_comment.post_id and
+    	            cog_post.post_circle_id=cog_circle.circle_id
+    	      group by  cog_comment.post_id
+    	      order by num desc
+    	  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: select *
+            from cog_circle
+            where circle_location like '%%'  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_num D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T22:55:17+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1' WHERE `user_id` = 16 [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='2' WHERE `circle_id` = 1 [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0020s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0050s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-14T22:55:20+08:00 ] ::1 /cog/index.php/Home/Circle/follow_circle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cog_follow` SET `follow_circle_id`='1' WHERE `user_id` = 16 [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT `circle_followers` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_followers`='6|10|16' WHERE `circle_id` = 1 [ RunTime:0.0160s ]
+
+[ 2016-03-14T22:55:21+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0080s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0020s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='2' WHERE `circle_id` = 1 [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0020s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0150s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:55:22+08:00 ] ::1 /cog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_news` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0130s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='2' WHERE `circle_id` = 1 [ RunTime:0.0370s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0010s ]
+SQL: select * from cog_circle order by circle_time desc limit 4 [ RunTime:0.0010s ]
+SQL: select cog_post.post_id,circle_name,post_time,post_title,post_content,count(cog_comment.post_id) as num
+    	      from cog_post,cog_comment,cog_circle
+    	      where cog_post.post_id=cog_comment.post_id and
+    	            cog_post.post_circle_id=cog_circle.circle_id
+    	      group by  cog_comment.post_id
+    	      order by num desc
+    	  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: select *
+            from cog_circle
+            where circle_location like '%%'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 123 行.
+NOTIC: [8] Undefined index: post_num D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:55:23+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='2' WHERE `circle_id` = 1 [ RunTime:0.0230s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0020s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0040s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:55:28+08:00 ] ::1 /cog/index.php/Home/Circle/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+SQL: INSERT INTO `cog_post` (`post_circle_id`,`post_user`,`post_title`,`post_content`,`post_game`,`post_time`,`post_server`) VALUES ('1','16','11','11111','英雄联盟','16-03-14 22:55:28','') [ RunTime:0.0190s ]
+
+[ 2016-03-14T22:55:28+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=11&text-input=11111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0060s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T22:55:29+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0660s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0020s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='3' WHERE `circle_id` = 1 [ RunTime:0.0180s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0060s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0040s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:55:45+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=dgda&text-input=gdagadg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.1040s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0060s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T22:55:45+08:00 ] ::1 /cog/index.php/Home/Circle/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0240s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'post_circle_id' cannot be null
+
+[ 2016-03-14T22:56:48+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=dgda&text-input=gdagadg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T22:56:49+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=dgda&text-input=gdagadg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0250s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T22:56:50+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=dgda&text-input=gdagadg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T22:56:50+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=dgda&text-input=gdagadg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0070s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0210s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T22:56:51+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=dgda&text-input=gdagadg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.3470s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.3490s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T22:57:00+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='3' WHERE `circle_id` = 1 [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0000s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0030s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2016-03-14T22:57:03+08:00 ] ::1 /cog/index.php/Home/Circle/delete_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0030s ]
+SQL: DELETE FROM `cog_comment` WHERE `post_id` = 42 [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT `post_img` FROM `cog_post` WHERE `post_id` = 42 LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `cog_post` WHERE `post_id` = 42 [ RunTime:0.0260s ]
+
+[ 2016-03-14T22:57:05+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='2' WHERE `circle_id` = 1 [ RunTime:0.0290s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0050s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:57:10+08:00 ] ::1 /cog/index.php/Home/Circle/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: INSERT INTO `cog_post` (`post_circle_id`,`post_user`,`post_title`,`post_content`,`post_game`,`post_time`,`post_server`) VALUES ('1','16','gg','gg','英雄联盟','16-03-14 22:57:10','') [ RunTime:0.0270s ]
+
+[ 2016-03-14T22:57:10+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=gg&text-input=gg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0060s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0000s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T22:57:11+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0170s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0020s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='3' WHERE `circle_id` = 1 [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0020s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0050s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:57:16+08:00 ] ::1 /cog/index.php/Home/Circle/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: INSERT INTO `cog_post` (`post_circle_id`,`post_user`,`post_title`,`post_content`,`post_game`,`post_time`,`post_server`) VALUES ('1','16','ggg','ggggg','英雄联盟','16-03-14 22:57:16','') [ RunTime:0.0210s ]
+
+[ 2016-03-14T22:57:16+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=ggg&text-input=ggggg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T22:57:16+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='4' WHERE `circle_id` = 1 [ RunTime:0.0290s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0120s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0020s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0020s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0050s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:57:23+08:00 ] ::1 /cog/index.php/Home/Circle/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0090s ]
+SQL: INSERT INTO `cog_post` (`post_circle_id`,`post_user`,`post_title`,`post_content`,`post_game`,`post_time`,`post_server`) VALUES ('1','16','gggg','gggggg','英雄联盟','16-03-14 22:57:23','') [ RunTime:0.0050s ]
+
+[ 2016-03-14T22:57:23+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=gggg&text-input=gggggg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0000s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0000s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T22:57:23+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='5' WHERE `circle_id` = 1 [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0050s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:57:26+08:00 ] ::1 /cog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_news` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0070s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='5' WHERE `circle_id` = 1 [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0020s ]
+SQL: select cog_post.post_id,circle_name,post_time,post_title,post_content,count(cog_comment.post_id) as num
+    	      from cog_post,cog_comment,cog_circle
+    	      where cog_post.post_id=cog_comment.post_id and
+    	            cog_post.post_circle_id=cog_circle.circle_id
+    	      group by  cog_comment.post_id
+    	      order by num desc
+    	  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: select *
+            from cog_circle
+            where circle_location like '%%'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 172 行.
+NOTIC: [8] Undefined index: post_num D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 176 行.
+NOTIC: [8] Undefined index: circle_game_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 182 行.
+NOTIC: [8] Undefined index: circle_describe D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T22:57:27+08:00 ] ::1 /cog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_news` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0000s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='5' WHERE `circle_id` = 1 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0010s ]
+SQL: select cog_post.post_id,circle_name,post_time,post_title,post_content,count(cog_comment.post_id) as num
+    	      from cog_post,cog_comment,cog_circle
+    	      where cog_post.post_id=cog_comment.post_id and
+    	            cog_post.post_circle_id=cog_circle.circle_id
+    	      group by  cog_comment.post_id
+    	      order by num desc
+    	  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: select *
+            from cog_circle
+            where circle_location like '%%'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 172 行.
+NOTIC: [8] Undefined index: post_num D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 176 行.
+NOTIC: [8] Undefined index: circle_game_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 182 行.
+NOTIC: [8] Undefined index: circle_describe D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T22:57:28+08:00 ] ::1 /cog/index.php/Home/MyInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: select cog_post.* ,circle_name
+		      from cog_post,cog_circle 
+		      where cog_post.post_circle_id=cog_circle.circle_id and
+		      cog_post.post_user=16 
+		      order by cog_post.post_time desc [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0040s ]
+SQL: select cog_comment.*,post_title,User_name,circle_name,post_game
+		      from cog_comment,cog_post,cog_user,cog_circle
+		      where cog_comment.comment_user_id=cog_user.User_id and
+		      cog_comment.post_id=cog_post.post_id and
+		      cog_comment.post_circle_id=cog_circle.circle_id and 
+		      cog_comment.comment_puser_id=16 and 
+		      cog_comment.comment_view=1 
+		      order by cog_comment.comment_time desc [ RunTime:0.0010s ]
+SQL: select cog_comment.*,post_title,User_name,circle_name,post_game
+		      from cog_comment,cog_post,cog_user,cog_circle
+		      where cog_comment.comment_user_id=cog_user.User_id and
+		      cog_comment.post_id=cog_post.post_id and
+		      cog_comment.post_circle_id=cog_circle.circle_id and 
+		      cog_comment.comment_puser_id=16 and 
+		      cog_comment.comment_view=0 
+		      order by cog_comment.comment_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and cog_circle.circle_id=cog_post.post_circle_id' at line 5
+
+[ 2016-03-14T22:59:37+08:00 ] ::1 /cog/index.php/Home/MyInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: select cog_post.* ,circle_name
+		      from cog_post,cog_circle 
+		      where cog_post.post_circle_id=cog_circle.circle_id and
+		      cog_post.post_user=16 
+		      order by cog_post.post_time desc [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0040s ]
+SQL: select cog_comment.*,post_title,User_name,circle_name,post_game
+		      from cog_comment,cog_post,cog_user,cog_circle
+		      where cog_comment.comment_user_id=cog_user.User_id and
+		      cog_comment.post_id=cog_post.post_id and
+		      cog_comment.post_circle_id=cog_circle.circle_id and 
+		      cog_comment.comment_puser_id=16 and 
+		      cog_comment.comment_view=1 
+		      order by cog_comment.comment_time desc [ RunTime:0.0010s ]
+SQL: select cog_comment.*,post_title,User_name,circle_name,post_game
+		      from cog_comment,cog_post,cog_user,cog_circle
+		      where cog_comment.comment_user_id=cog_user.User_id and
+		      cog_comment.post_id=cog_post.post_id and
+		      cog_comment.post_circle_id=cog_circle.circle_id and 
+		      cog_comment.comment_puser_id=16 and 
+		      cog_comment.comment_view=0 
+		      order by cog_comment.comment_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and cog_circle.circle_id=cog_post.post_circle_id' at line 5
+
+[ 2016-03-14T22:59:38+08:00 ] ::1 /cog/index.php/Home/MyInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: select cog_post.* ,circle_name
+		      from cog_post,cog_circle 
+		      where cog_post.post_circle_id=cog_circle.circle_id and
+		      cog_post.post_user=16 
+		      order by cog_post.post_time desc [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0030s ]
+SQL: select cog_comment.*,post_title,User_name,circle_name,post_game
+		      from cog_comment,cog_post,cog_user,cog_circle
+		      where cog_comment.comment_user_id=cog_user.User_id and
+		      cog_comment.post_id=cog_post.post_id and
+		      cog_comment.post_circle_id=cog_circle.circle_id and 
+		      cog_comment.comment_puser_id=16 and 
+		      cog_comment.comment_view=1 
+		      order by cog_comment.comment_time desc [ RunTime:0.0010s ]
+SQL: select cog_comment.*,post_title,User_name,circle_name,post_game
+		      from cog_comment,cog_post,cog_user,cog_circle
+		      where cog_comment.comment_user_id=cog_user.User_id and
+		      cog_comment.post_id=cog_post.post_id and
+		      cog_comment.post_circle_id=cog_circle.circle_id and 
+		      cog_comment.comment_puser_id=16 and 
+		      cog_comment.comment_view=0 
+		      order by cog_comment.comment_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and cog_circle.circle_id=cog_post.post_circle_id' at line 5
+
+[ 2016-03-14T22:59:41+08:00 ] ::1 /cog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_news` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='5' WHERE `circle_id` = 1 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0010s ]
+SQL: select cog_post.post_id,circle_name,post_time,post_title,post_content,count(cog_comment.post_id) as num
+    	      from cog_post,cog_comment,cog_circle
+    	      where cog_post.post_id=cog_comment.post_id and
+    	            cog_post.post_circle_id=cog_circle.circle_id
+    	      group by  cog_comment.post_id
+    	      order by num desc
+    	  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: select *
+            from cog_circle
+            where circle_location like '%%'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 172 行.
+NOTIC: [8] Undefined index: post_num D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 176 行.
+NOTIC: [8] Undefined index: circle_game_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 182 行.
+NOTIC: [8] Undefined index: circle_describe D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-14T23:00:29+08:00 ] ::1 /cog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cog_news` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0060s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0020s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0020s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='5' WHERE `circle_id` = 1 [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0020s ]
+SQL: select cog_post.post_id,circle_name,post_time,post_title,post_content,count(cog_comment.post_id) as num
+    	      from cog_post,cog_comment,cog_circle
+    	      where cog_post.post_id=cog_comment.post_id and
+    	            cog_post.post_circle_id=cog_circle.circle_id
+    	      group by  cog_comment.post_id
+    	      order by num desc
+    	  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: select *
+            from cog_circle
+            where circle_location like '%%'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0080s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 172 行.
+NOTIC: [8] Undefined index: post_num D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 176 行.
+NOTIC: [8] Undefined index: circle_game_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 182 行.
+NOTIC: [8] Undefined index: circle_describe D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:01:23+08:00 ] ::1 /cog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_news` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0330s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0020s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='5' WHERE `circle_id` = 1 [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0010s ]
+SQL: select cog_post.post_id,circle_name,post_time,post_title,post_content,count(cog_comment.post_id) as num
+    	      from cog_post,cog_comment,cog_circle
+    	      where cog_post.post_id=cog_comment.post_id and
+    	            cog_post.post_circle_id=cog_circle.circle_id
+    	      group by  cog_comment.post_id
+    	      order by num desc
+    	  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: select *
+            from cog_circle
+            where circle_location like '%%'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0030s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 172 行.
+NOTIC: [8] Undefined index: post_num D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 176 行.
+NOTIC: [8] Undefined index: circle_game_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 182 行.
+NOTIC: [8] Undefined index: circle_describe D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:02:05+08:00 ] ::1 /cog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_news` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0660s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0020s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='5' WHERE `circle_id` = 1 [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0020s ]
+SQL: select cog_post.post_id,circle_name,post_time,post_title,post_content,count(cog_comment.post_id) as num
+    	      from cog_post,cog_comment,cog_circle
+    	      where cog_post.post_id=cog_comment.post_id and
+    	            cog_post.post_circle_id=cog_circle.circle_id
+    	      group by  cog_comment.post_id
+    	      order by num desc
+    	  [ RunTime:0.0330s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: select *
+            from cog_circle
+            where circle_location like '%%'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 172 行.
+NOTIC: [8] Undefined index: post_num D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 176 行.
+NOTIC: [8] Undefined index: circle_game_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 182 行.
+NOTIC: [8] Undefined index: circle_describe D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-14T23:02:07+08:00 ] ::1 /cog/index.php/Home/MyInfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: select cog_post.* ,circle_name
+		      from cog_post,cog_circle 
+		      where cog_post.post_circle_id=cog_circle.circle_id and
+		      cog_post.post_user=16 
+		      order by cog_post.post_time desc [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0040s ]
+SQL: select cog_comment.*,post_title,User_name,circle_name,post_game
+		      from cog_comment,cog_post,cog_user,cog_circle
+		      where cog_comment.comment_user_id=cog_user.User_id and
+		      cog_comment.post_id=cog_post.post_id and
+		      cog_comment.post_circle_id=cog_circle.circle_id and 
+		      cog_comment.comment_puser_id=16 and 
+		      cog_comment.comment_view=1 
+		      order by cog_comment.comment_time desc [ RunTime:0.0010s ]
+SQL: select cog_comment.*,post_title,User_name,circle_name,post_game
+		      from cog_comment,cog_post,cog_user,cog_circle
+		      where cog_comment.comment_user_id=cog_user.User_id and
+		      cog_comment.post_id=cog_post.post_id and
+		      cog_comment.post_circle_id=cog_circle.circle_id and 
+		      cog_comment.comment_puser_id=16 and 
+		      cog_comment.comment_view=0 
+		      order by cog_comment.comment_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: res D:\XAMPP\htdocs\cog\cog\Home\Model\PostModel.class.php 第 245 行.
+SQL: SELECT `follow_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `followed_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 0  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\XAMPP\htdocs\cog\cog\Home\Controller\MyInfoController.class.php 第 65 行.
+NOTIC: [8] Undefined variable: result_subscribed D:\XAMPP\htdocs\cog\cog\Home\Controller\MyInfoController.class.php 第 76 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\d0b9c7f7ef0f53857496f4499172b842.php 第 171 行.
+NOTIC: [8] Undefined variable: res_collect D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\d0b9c7f7ef0f53857496f4499172b842.php 第 191 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-14T23:02:07+08:00 ] ::1 /cog/index.php/Home/MyInfo/images/touxiang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:06:32+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='5' WHERE `circle_id` = 1 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0000s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0030s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T23:06:37+08:00 ] ::1 /cog/index.php/Home/Circle/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0090s ]
+SQL: INSERT INTO `cog_post` (`post_circle_id`,`post_user`,`post_title`,`post_content`,`post_game`,`post_time`,`post_server`) VALUES ('1','16','ee','ee','英雄联盟','16-03-14 23:06:37','') [ RunTime:0.0220s ]
+
+[ 2016-03-14T23:06:38+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=ee&text-input=ee
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0000s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T23:06:38+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0080s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0000s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='6' WHERE `circle_id` = 1 [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0040s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T23:06:42+08:00 ] ::1 /cog/index.php/Home/Circle/delete_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0040s ]
+SQL: DELETE FROM `cog_comment` WHERE `post_id` = 46 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT `post_img` FROM `cog_post` WHERE `post_id` = 46 LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `cog_post` WHERE `post_id` = 46 [ RunTime:0.0290s ]
+
+[ 2016-03-14T23:06:44+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='5' WHERE `circle_id` = 1 [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0040s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:06:45+08:00 ] ::1 /cog/index.php/Home/Circle/delete_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0000s ]
+SQL: DELETE FROM `cog_comment` WHERE `post_id` = 45 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0000s ]
+SQL: SELECT `post_img` FROM `cog_post` WHERE `post_id` = 45 LIMIT 1   [ RunTime:0.0000s ]
+SQL: DELETE FROM `cog_post` WHERE `post_id` = 45 [ RunTime:0.0156s ]
+
+[ 2016-03-14T23:06:46+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='4' WHERE `circle_id` = 1 [ RunTime:0.0310s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0040s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:06:47+08:00 ] ::1 /cog/index.php/Home/Circle/delete_post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0000s ]
+SQL: DELETE FROM `cog_comment` WHERE `post_id` = 44 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0000s ]
+SQL: SELECT `post_img` FROM `cog_post` WHERE `post_id` = 44 LIMIT 1   [ RunTime:0.0000s ]
+SQL: DELETE FROM `cog_post` WHERE `post_id` = 44 [ RunTime:0.0312s ]
+
+[ 2016-03-14T23:06:48+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='3' WHERE `circle_id` = 1 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0030s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:06:54+08:00 ] ::1 /cog/index.php/Home/Circle/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: INSERT INTO `cog_post` (`post_circle_id`,`post_user`,`post_title`,`post_content`,`post_game`,`post_time`,`post_server`) VALUES ('1','16','gg','ggg','英雄联盟','16-03-14 23:06:54','') [ RunTime:0.0120s ]
+
+[ 2016-03-14T23:06:54+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=gg&text-input=ggg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|1' WHERE `user_id` = 16 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0010s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T23:06:54+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='1|' WHERE `user_id` = 16 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='4' WHERE `circle_id` = 1 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 16  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=1 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0130s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=16 and
+		cog_comment.post_circle_id=1 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-14T23:07:01+08:00 ] ::1 /cog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_news` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '1'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=1 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='4' WHERE `circle_id` = 1 [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 1  [ RunTime:0.0010s ]
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0010s ]
+SQL: select cog_post.post_id,circle_name,post_time,post_title,post_content,count(cog_comment.post_id) as num
+    	      from cog_post,cog_comment,cog_circle
+    	      where cog_post.post_id=cog_comment.post_id and
+    	            cog_post.post_circle_id=cog_circle.circle_id
+    	      group by  cog_comment.post_id
+    	      order by num desc
+    	  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 10   [ RunTime:0.0000s ]
+SQL: select *
+            from cog_circle
+            where circle_location like '%%'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 172 行.
+NOTIC: [8] Undefined index: post_num D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 176 行.
+NOTIC: [8] Undefined index: circle_game_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 182 行.
+NOTIC: [8] Undefined index: circle_describe D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-14T23:07:08+08:00 ] ::1 /cog/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:07:13+08:00 ] ::1 /cog/index.php/Home//Register/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: name D:\XAMPP\htdocs\cog\cog\Home\Controller\RegisterController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_name` = null  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-14T23:07:22+08:00 ] ::1 /cog/index.php/Home/Login/check_name
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_name` = '2'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:07:24+08:00 ] ::1 /cog/index.php/Home/Login/check_name
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_name` = '22'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T23:07:27+08:00 ] ::1 /cog/index.php/Home/Register/mail_regist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: INSERT INTO `cog_user` (`User_name`,`User_Email`,`User_reg_time`,`User_password`) VALUES ('22','1','2016-03-14','22') [ RunTime:0.0240s ]
+SQL: SELECT `User_id` FROM `cog_user` WHERE `User_name` = '22' AND `User_Email` = 1 AND `User_reg_time` = '2016-03-14' AND `User_password` = '22' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: INSERT INTO `cog_follow` (`user_id`,`follow_id`,`followed_id`,`follow_circle_id`) VALUES ('17','0','0','0') [ RunTime:0.0510s ]
+
+[ 2016-03-14T23:07:30+08:00 ] ::1 /cog/index.php/Home/Information/information/cat/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:07:50+08:00 ] ::1 /cog/index.php/Home/Information/information_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\XAMPP\htdocs\cog\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `cog_user` SET `User_sex`='on',`User_note`='w',`User_birth`='2015-3=2',`User_addr`='湖南省长沙市天心区',`User_headimg`='cog/Public/imgs/user-headimg/head_img_3.png' WHERE `User_name` = '22' [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0030s ]
+SQL: SELECT `User_id` FROM `cog_user` WHERE `User_name` = '22' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `User_headimg` FROM `cog_user` WHERE `User_name` = '22' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T23:07:52+08:00 ] ::1 /cog/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_news` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 3   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: circle_res D:\XAMPP\htdocs\cog\cog\Home\Controller\IndexController.class.php 第 39 行.
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0040s ]
+SQL: select cog_post.post_id,circle_name,post_time,post_title,post_content,count(cog_comment.post_id) as num
+    	      from cog_post,cog_comment,cog_circle
+    	      where cog_post.post_id=cog_comment.post_id and
+    	            cog_post.post_circle_id=cog_circle.circle_id
+    	      group by  cog_comment.post_id
+    	      order by num desc
+    	  [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_news` ORDER BY news_id desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: select *
+            from cog_circle
+            where circle_location like '%%'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 172 行.
+NOTIC: [8] Undefined index: post_num D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 176 行.
+NOTIC: [8] Undefined index: circle_game_id D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 182 行.
+NOTIC: [8] Undefined index: circle_describe D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\604111f318b0b63c756a387c928552aa.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:07:55+08:00 ] ::1 /cog/index.php/Home/Circle/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0110s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select * from cog_circle order by circle_time desc limit 4 [ RunTime:0.0010s ]
+SQL: select post_circle_id ,circle_name,circle_location,count(post_circle_id) as num,circle_img
+		      from cog_post,cog_circle
+		      where cog_post.post_time >= '2016-03-14 00:00:00' and cog_post.post_time <='2016-03-14 24:00:00' and
+		            cog_post.post_circle_id=cog_circle.circle_id
+		      group by post_circle_id
+		      order by num desc
+		       [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:07:57+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0040s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='4' WHERE `user_id` = 17 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '4'  [ RunTime:0.0000s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=4 
+         order by cog_post.post_time desc [ RunTime:0.0010s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = 4 [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0030s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '4'  [ RunTime:0.0010s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=4 
+         order by cog_post.post_time desc [ RunTime:0.0000s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=4 
+		order by post_time desc [ RunTime:0.0010s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0030s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=17 and
+		cog_comment.post_circle_id=4 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: boutique_post D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 138 行.
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T23:08:03+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=ww&text-input=ww
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0075s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0025s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|4' WHERE `user_id` = 17 [ RunTime:0.0225s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0025s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0000s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0075s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 17  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0025s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0025s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T23:08:03+08:00 ] ::1 /cog/index.php/Home/Circle/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'post_circle_id' cannot be null
+
+[ 2016-03-14T23:10:08+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=ww&text-input=ww
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0025s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0025s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|4' WHERE `user_id` = 17 [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0000s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0000s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 17  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0025s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0000s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by cog_post.post_time desc' at line 6
+
+[ 2016-03-14T23:13:07+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=ww&text-input=ww
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0025s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0350s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|4' WHERE `user_id` = 17 [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0000s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0000s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0025s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 17  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0000s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0025s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by post_time desc' at line 6
+
+[ 2016-03-14T23:13:28+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0025s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='4|' WHERE `user_id` = 17 [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0775s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '4'  [ RunTime:0.0025s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=4 
+         order by cog_post.post_time desc [ RunTime:0.0025s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = 4 [ RunTime:0.0225s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 17  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0075s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '4'  [ RunTime:0.0025s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=4 
+         order by cog_post.post_time desc [ RunTime:0.0000s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0025s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=4 
+		order by post_time desc [ RunTime:0.0000s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 17 LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0075s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=17 and
+		cog_comment.post_circle_id=4 [ RunTime:0.0175s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: boutique_post D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 138 行.
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2016-03-14T23:14:32+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0025s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0025s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='4|' WHERE `user_id` = 17 [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '4'  [ RunTime:0.0000s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=4 
+         order by cog_post.post_time desc [ RunTime:0.0025s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = 4 [ RunTime:0.0250s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 4  [ RunTime:0.0025s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 17  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '4'  [ RunTime:0.0000s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=4 
+         order by cog_post.post_time desc [ RunTime:0.0025s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=4 
+		order by post_time desc [ RunTime:0.0025s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0025s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=17 and
+		cog_comment.post_circle_id=4 [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: boutique_post D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 138 行.
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T23:14:39+08:00 ] ::1 /cog/index.php/Home/Circle/post
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: INSERT INTO `cog_post` (`post_circle_id`,`post_user`,`post_title`,`post_content`,`post_game`,`post_time`,`post_server`) VALUES ('4','17','1111','1111','英雄联盟','16-03-14 23:14:39','') [ RunTime:0.0125s ]
+
+[ 2016-03-14T23:14:39+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?title-input=1111&text-input=1111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: circle_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='|4' WHERE `user_id` = 17 [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0000s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='0' WHERE `circle_id` = null [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = null  [ RunTime:0.0000s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 17  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = null  [ RunTime:0.0000s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = null LIMIT 1   [ RunTime:0.0025s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=4 
+		order by post_time desc [ RunTime:0.0000s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 17 LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+
+[ 2016-03-14T23:14:39+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0175s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0025s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='4|' WHERE `user_id` = 17 [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '4'  [ RunTime:0.0025s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=4 
+         order by cog_post.post_time desc [ RunTime:0.0000s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='1' WHERE `circle_id` = 4 [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 17  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '4'  [ RunTime:0.0025s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=4 
+         order by cog_post.post_time desc [ RunTime:0.0000s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0025s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=4 
+		order by post_time desc [ RunTime:0.0000s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0050s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=17 and
+		cog_comment.post_circle_id=4 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8] Undefined variable: boutique_post D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 138 行.
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T23:14:46+08:00 ] ::1 /cog/index.php/Home/User/index?post_id=48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0050s ]
+SQL: SELECT `User_headimg` FROM `cog_user` WHERE `User_id` = 17 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_id` = 48  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0050s ]
+SQL: select cog_comment.*,User_name,User_headimg,User_level
+		     from cog_comment,cog_user
+		     where cog_comment.comment_user_id=cog_user.User_id and
+		     cog_comment.post_id=48 and
+		     cog_comment.comment_pid=0  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'comment_pid' D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\6b812f932a25434d870dc07f94e0674b.php 第 84 行.
+NOTIC: [2] Illegal string offset 'comment_id' D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\6b812f932a25434d870dc07f94e0674b.php 第 129 行.
+NOTIC: [2] Illegal string offset 'comment_user_id' D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\6b812f932a25434d870dc07f94e0674b.php 第 142 行.
+NOTIC: [2] Illegal string offset 'comment_id' D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\6b812f932a25434d870dc07f94e0674b.php 第 142 行.
+NOTIC: [2] Illegal string offset 'user_headimg' D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\6b812f932a25434d870dc07f94e0674b.php 第 147 行.
+NOTIC: [2] Illegal string offset 'user_name' D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\6b812f932a25434d870dc07f94e0674b.php 第 149 行.
+NOTIC: [2] Illegal string offset 'comment_puser_name' D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\6b812f932a25434d870dc07f94e0674b.php 第 151 行.
+NOTIC: [2] Illegal string offset 'comment_content' D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\6b812f932a25434d870dc07f94e0674b.php 第 151 行.
+NOTIC: [2] Illegal string offset 'comment_user_id' D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\6b812f932a25434d870dc07f94e0674b.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-14T23:14:49+08:00 ] ::1 /cog/index.php/Home/Circle/circlesquare?circle_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0050s ]
+SQL: SELECT `follow_recent_view` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cog_follow` SET `follow_recent_view`='4|' WHERE `user_id` = 17 [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_circle` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '4'  [ RunTime:0.0025s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=4 
+         order by cog_post.post_time desc [ RunTime:0.0000s ]
+SQL: UPDATE `cog_circle` SET `circle_post_num`='1' WHERE `circle_id` = 4 [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_circle` WHERE `circle_id` = 4  [ RunTime:0.0025s ]
+SQL: SELECT `circle_name` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_follow` [ RunTime:0.0025s ]
+SQL: SELECT `follow_circle_id` FROM `cog_follow` WHERE `user_id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `circle_game_id` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cog_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `cog_user` WHERE `User_id` = 17  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `cog_post` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: game_id D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 90 行.
+SQL: SELECT * FROM `cog_post` WHERE `post_circle_id` = '4'  [ RunTime:0.0025s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name
+    	 from cog_post ,cog_user
+    	 where cog_post.post_user = cog_user.User_id and 
+         cog_post.post_circle_id=4 
+         order by cog_post.post_time desc [ RunTime:0.0000s ]
+SQL: SELECT `circle_monitor_id` FROM `cog_circle` WHERE `circle_id` = 4 LIMIT 1   [ RunTime:0.0025s ]
+SQL: select post_title,post_content,post_id,post_user,post_time,post_game,post_server,post_title,post_content,post_boutique,User_headimg,User_name 
+		from cog_post ,cog_user
+		where cog_post.post_user=cog_user.User_id and
+		cog_post.post_boutique=1 and 
+		cog_post.post_circle_id=4 
+		order by post_time desc [ RunTime:0.0000s ]
+SQL: SELECT `User_collect` FROM `cog_user` WHERE `User_id` = 17 LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: collect_post D:\XAMPP\htdocs\cog\cog\Home\Controller\CircleController.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `cog_comment` [ RunTime:0.0050s ]
+SQL: select cog_comment.*,post_title,User_name,User_headimg
+		from cog_comment,cog_post,cog_user
+		where cog_comment.comment_user_id=cog_user.User_id and
+		cog_comment.post_id=cog_post.post_id and
+		cog_comment.comment_puser_id=17 and
+		cog_comment.post_circle_id=4 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: boutique_post D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 138 行.
+NOTIC: [8] Undefined variable: res_reply D:\XAMPP\htdocs\cog\cog\Runtime\Cache\Home\ca9c41a52fc865aec1eb2ef23c0790c0.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

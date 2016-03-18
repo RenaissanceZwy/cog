@@ -1,0 +1,424 @@
+/*网页初始化css来实现不同浏览器的兼容性*/
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,textarea,p{
+    margin:0;
+    padding:0;
+}
+/*网页的body的默认字体以及背景颜色*/
+body{
+    font-family: "Microsoft YaHei",sans-serif;
+}
+/*清除超链接a的默认样式*/
+a{
+    text-decoration: none;
+    color: black;
+}
+/*清除ul li的默认样式*/
+ul{
+    list-style: none;
+}
+/*nav部分*/
+.nav-container{
+    border: 1px solid black;
+    margin: 20px auto;
+    width: 1300px;
+    height: 60px;
+    border-radius: 5px;
+}
+/*nav-logo*/
+.nav-logo{
+    margin-left: 50px;
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+    float: left;
+}
+/*nav-发现另一个你*/
+.nav-caption{
+    width: 200px;
+    height: 60px;
+    float: left;
+    margin-left: 20px;
+}
+/*nav-导航条及按钮*/
+.nav-bar{
+    width: 450px;
+    height: 60px;
+    float: left;
+    margin-left: 60px;
+}
+.nav-bar a{
+    margin-left: 30px;
+    width: 70px;
+    height: 60px;
+    float: left;
+    color: black;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+a.active{
+    background: rgba(0,0,0,.3);
+}
+.nav-bar a:hover{
+    background: rgba(0,0,0,.1);
+}
+/*nav-搜索栏*/
+.nav-form{
+    position: relative;
+    width: 300px;
+    height: 35px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 12px;
+}
+.nav-form-search{
+    width: 200px;
+    height: 35px;
+    float: left;
+    text-indent: 10px;
+    border-radius: 6px;
+}
+.nav-form-submit{
+    border-radius: 5px;
+    position: absolute;
+    top:3px;
+    left: 220px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/*用户个人信息以及广告banner部分*/
+.user-banner-container{
+    margin: 20px auto;
+    width: 1200px;
+    height: 450px;
+}
+/*用户信息*/
+.user{
+    border: 1px solid black;
+    width: 250px;
+    height: 450px;
+    float: left;
+}
+.user-information{
+    width: 250px;
+    height: 100px;
+}
+/*用户头像*/
+.user-picture{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 70px;
+    height: 70px;
+    float: left;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+}
+/*用户名字*/
+.user-name{
+    width: 150px;
+    height: 100px;
+    float: left;
+    font-size: 20px;
+    line-height: 100px;
+    text-align: center;
+}
+/*用户等级*/
+.user-rank{
+    width: 244px;
+    height: 100px;
+}
+.user-rank-title{
+    text-indent: 10px;
+    width: 107px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    font-size: 21px;
+    line-height: 100px;
+}
+.user-rank-num{
+    float: left;
+    width: 137px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+}
+/*用户圈子*/
+.user-circle{
+    border-top: 1px solid black;
+    width: 250px;
+    height: 241px;
+}
+.user-circle-title{
+    text-indent: 10px;
+    width: 100%;
+    height: 40px;
+    float: left;
+    font-size: 21px;
+    line-height: 60px;
+}
+.user-circle-list{
+    margin-top: 60px;
+    width: 100%;
+    height: 180px;
+}
+.user-circle-num{
+    border-radius: 5px;
+    border: 1px solid black;
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+/*banner图*/
+.banner{
+    position: relative;
+    float: right;
+    width: 900px;
+    height: 450px;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+}
+.banner-imgList{
+    width: 2700px;
+    height: 450px;
+    position: absolute;
+}
+.banner-imgList img{
+    width: 900px;
+    height: 450px;
+    float: left;
+}
+.banner ul{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -100px;
+}
+.banner li{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-left: 35px;
+    cursor: pointer;
+}
+li.on{
+}
+.banner-prev{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top:200px;
+    left: 0;
+    display: none;
+    cursor: pointer;
+}
+.banner-next{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top:200px;
+    right: 0;
+    display: none;
+    cursor: pointer;
+}
+
+/*热门圈子*/
+.hot-circle-container{
+    margin: 30px auto;
+    width: 1200px;
+    height: 300px;
+    border-top: 2px solid black;
+}
+.hot-circle-container h2{
+    line-height: 60px;
+}
+/*每一个热门圈子*/
+.hot-circle{
+    border: 1px solid black;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 40px;
+    overflow: hidden;
+}
+/*圈子内容*/
+.hot-circle-txt{
+    line-height: 200px;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+/*圈子信息*/
+.hot-circle-information{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    bottom: 0;
+}
+/*圈子名称*/
+.hot-circle-information p.circle-name{
+    height: 50px;
+    float: left;
+    width: 100px;
+    line-height: 50px;
+    margin-left: 50px;
+}
+/*圈子人数*/
+.hot-circle-information p.circle-numbers{
+    height: 50px;
+    float: left;
+    width: 100px;
+    line-height: 50px;
+}
+
+/*热门帖子*/
+.note-container{
+    margin: 60px auto;
+    width: 1200px;
+    height: 500px;
+    border-top: 2px solid black;
+}
+.note-container h2{
+    line-height: 60px;
+}
+/*每一个热门帖子*/
+.note{
+    width: 500px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 1px black;
+    float: left;
+    margin-left: 60px;
+    margin-top: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+/*热门帖子标题*/
+.note-title{
+    width: 500px;
+    line-height: 50px;
+    font-size: 20px;
+    transition:all 1s ;
+    transform:translateX(0) rotate(-4deg) ;
+}
+/*CSS3旋转标题*/
+.note:hover .note-title{
+    transform:translateX(120px) rotate(0deg) ;
+}
+/*帖子主题内容*/
+.note-information{
+    color: rgb(186,186,186);
+    font-size: 16px;
+    text-indent: 26px;
+    padding: 10px;
+    top:50px;
+}
+
+/*附近圈子*/
+.circle-container{
+    margin: 60px auto;
+    width: 1200px;
+    height: 500px;
+    border-top: 2px solid black;
+}
+.circle-container h2{
+    line-height: 60px;
+}
+/*每个圈子*/
+.circle{
+    margin: 0 auto 20px;
+    width: 1100px;
+    height: 120px;
+    background: #ffffff;
+    box-shadow: 0 0 1px black;
+    border-radius: 10px;
+}
+.circle-logo{
+    width: 300px;
+    height: 120px;
+    border-right: 2px solid gray;
+    float: left;
+}
+/*圈子的头像*/
+.circle-pic{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/*圈子的主要信息*/
+.circle-logo span{
+    width: 160px;
+    height: 120px;
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+}
+/*圈子的主题内容*/
+.circle-message{
+    float: left;
+    width: 750px;
+    height: 120px;
+    padding: 10px;
+}
+
+/*尾部*/
+.footer-container{
+    margin: 5px auto;
+    width: 1200px;
+    height: 200px;
+    border-top: 2px solid black;
+}
+/*合作伙伴*/
+.cooperative-partner{
+    margin: 10px auto;
+    width: 1000px;
+    height: 80px;
+}
+/*友情链接*/
+.friendly-link{
+    margin: 10px auto;
+    width: 1000px;
+    height: 80px;
+}
+.cooperative-partner p{
+    font-size: 18px;
+    font-weight: bold;
+    width: 120px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    line-height: 80px;
+}
+.friendly-link p{
+    font-size: 18px;
+    font-weight: bold;
+    width: 120px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    line-height: 80px;
+}
+.cooperative-partner img{
+    margin-left: 40px;
+}
+.friendly-link img{
+    margin-left: 40px;
+}

@@ -1,0 +1,250 @@
+/*网页初始化css来实现不同浏览器的兼容性*/
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,textarea,p{
+    margin:0;
+    padding:0;
+}
+/*网页的body的默认字体以及背景颜色*/
+body{
+    font-family: "Microsoft YaHei",sans-serif;
+}
+/*清除超链接a的默认样式*/
+a{
+    text-decoration: none;
+    color: black;
+}
+/*清除ul li的默认样式*/
+ul{
+    list-style: none;
+}
+/*nav部分*/
+.nav-container{
+    border: 1px solid black;
+    margin: 20px auto;
+    width: 1300px;
+    height: 60px;
+    border-radius: 5px;
+}
+/*nav-logo*/
+.nav-logo{
+    margin-left: 50px;
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+    float: left;
+}
+/*nav-发现另一个你*/
+.nav-caption{
+    width: 200px;
+    height: 60px;
+    float: left;
+    margin-left: 20px;
+}
+/*nav-导航条及按钮*/
+.nav-bar{
+    width: 450px;
+    height: 60px;
+    float: left;
+    margin-left: 60px;
+}
+.nav-bar a{
+    margin-left: 30px;
+    width: 70px;
+    height: 60px;
+    float: left;
+    color: black;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+a.active{
+    background: rgba(0,0,0,.3);
+}
+.nav-bar a:hover{
+    background: rgba(0,0,0,.1);
+}
+
+/*用户信息*/
+.user-container{
+    margin: 20px auto;
+    width: 1300px;
+    height: 150px;
+}
+/*用户头像*/
+.user-container img{
+    margin-left: 20px;
+    float: left;
+}
+.user-information{
+    float: left;
+    margin-left: 150px;
+    width: 350px;
+    height: 150px;
+}
+/*用户名*/
+.user-name{
+    font-size: 23px;
+    margin-right: 20px;
+}
+.user-context{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    line-height: 30px;
+}
+/*用户关注和被关注信息*/
+.user-forward{
+    float: left;
+    margin-top: 90px;
+    margin-left: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+}
+/*关注其他用户*/
+.user-forward-to{
+    float: left;
+    margin-top: 90px;
+    margin-left: 30px;
+    width: 250px;
+    height: 50px;
+}
+.user-forward-to li{
+    margin-left: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    float: left;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*动态，发帖以及回复主体模块*/
+.main-container{
+    position: relative;
+    margin: 20px auto;
+    width: 1300px;
+    height: 550px;
+}
+/*按钮*/
+.main-btn{
+    margin-bottom: 4px;
+    width: 400px;
+    height: 50px;
+}
+.main-btn li{
+    float: left;
+    width: 120px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+}
+.main-box{
+    position: absolute;
+    border: 1px solid black;
+    width: 1300px;
+    height: 500px;
+}
+li.box{
+    position: absolute;
+    width: 1300px;
+    height: 500px;
+}
+
+.post-box,.reply-box{
+    margin-top: 10px;
+    width: 1300px;
+    height: 100px;
+}
+.post-style{
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 1px solid black;
+}
+.reply-style{
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 1px solid black;
+}
+.post{
+    float: left;
+    margin-left: 80px;
+    width: 1000px;
+    height: 100px;
+    border-left: 1px solid black;
+}
+.reply{
+    float: left;
+    margin-left: 30px;
+    width: 1000px;
+    height: 100px;
+    border-left: 1px solid black;
+}
+.post-information,.reply-information{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+.post-information li{
+    height: 50px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+.reply-information li{
+    position: absolute;
+    height: 50px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+}
+.post-title,.reply-title{
+    left: 180px;
+    width: 450px;
+}
+.post-circle{
+    left: 650px;
+    width: 200px;
+}
+.reply-circle{
+    left: 660px;
+    width: 200px;
+}
+.post-time{
+    left: 850px;
+    width: 200px;
+}
+.reply-time{
+    left: 895px;
+    width: 200px;
+}
+.post-context,.reply-context{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 30px;
+}

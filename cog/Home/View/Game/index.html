@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{$Think.const.HOME_CSS}game/game.css" rel="stylesheet">
+    <title>游戏界面</title>
+</head>
+<body>
+
+
+<!--nav导航条信息1-->
+<div class="nav-container">
+    <img class="nav-logo" src="{$Think.const.HOME_IMGS}redLogo.png" title="logo">
+    <img class="nav-caption" src="{$Think.const.HOME_IMGS}caption.png" title="发现另一个你！">
+    <ul class="nav-bar">
+        <li><a href="{$Think.const.URL}Index/index">首页</a></li>
+        <li><a href="{$Think.const.URL}Circle/index">圈子</a></li>
+        <li><a class="active" href="{$Think.const.URL}Game/index">游戏</a></li>
+        <li><a href="{$Think.const.URL}MyCircle/index">我的圈子</a></li>
+    </ul>
+    <form action="" class="nav-form">
+        <input class="nav-form-search" type="text" placeholder="搜索附近的圈子">
+        <input class="nav-form-submit" style="background: url('{$Think.const.HOME_IMGS}search.png') no-repeat center"
+               type="submit" value="">
+    </form>
+</div>
+
+
+<!--页面主体-->
+<div class="main">
+    <h3>所有游戏</h3>
+    <input name="search" type="text" placeholder="输入要搜索的游戏">
+    <button class="main-p1">搜索</button>
+    <div class="main-game">
+        <a href=""><img src="{$Think.const.HOME_IMGS}bgImage.png"></a>
+            <span>
+                <a href=""><p class="main-game-p">游戏名称</p></a>
+                <p class="main-game-p1">圈子数：100</p>
+            </span>
+    </div>
+
+</div>
+</body>
+</html>

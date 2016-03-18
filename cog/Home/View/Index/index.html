@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="{$Think.const.HOME_CSS}index/index.css">
+</head>
+<body>
+<!-- <div class="head-container">
+    <span class="username">欢迎您&nbsp;{$username}</span>
+    <a href="{$Think.const.URL}Login/login" class="cancle">注销</a>
+    <ul class="city">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul class="selectCity">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li style="font-size: 10px;color: orange">取消</li>
+    </ul>
+    <ul class="selectDistrict">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <div id="quxiao" style="font-size: 10px;color: orange;cursor: pointer;">取消</div>
+    </ul>
+</div> -->
+<!--nav导航条信息1-->
+<div class="nav-container">
+    <img class="nav-logo" src="{$Think.const.HOME_IMGS}redLogo.png" title="logo">
+    <img class="nav-caption" src="{$Think.const.HOME_IMGS}caption.png" title="发现另一个你！">
+    <ul class="nav-bar">
+        <li><a class="active" href="{$Think.const.URL}Index/index">首页</a></li>
+        <li><a href="{$Think.const.URL}Circle/index">圈子</a></li>
+        <li><a href="{$Think.const.URL}Game/index">游戏</a></li>
+        <li><a href="{$Think.const.URL}MyCircle/index">我的圈子</a></li>
+    </ul>
+    <form action="" class="nav-form">
+        <input class="nav-form-search" type="text" placeholder="搜索附近的圈子">
+        <input class="nav-form-submit" style="background: url('{$Think.const.HOME_IMGS}search.png') no-repeat center"
+               type="submit" value="">
+    </form>
+    <a class="MyImg" href="{$Think.const.URL}MyInfo/index"><img src="/cog/{$userimg}" height="55px"></a>
+</div>
+<!--用户个人信息以及广告banner2-->
+<div class="user-banner-container">
+    <!--用户信息-->
+    <div class="user">
+        <div class="user-information">
+            <a href="{$Think.const.URL}MyInfo/index">
+                <img class="user-picture" title="用户头像" src="/cog/{$userimg}">
+            </a>
+
+            <div class="user-name">
+                {$username}
+            </div>
+        </div>
+        <div class="user-rank">
+            <p class="user-rank-title">我的等级</p>
+
+            <p class="user-rank-num"> {$userid}</p>
+        </div>
+        <div class="user-circle">
+            <div class="user-circle-title">我的圈子</div>
+            <ul class="user-circle-list">
+                <volist name="circle_follow" id="circle">
+                    <volist name="circle" id="data">
+                        <li class="user-circle-num"><a
+                                href="{$Think.const.URL}Circle/circlesquare?circle_id={$data.circle_id}">{$data.circle_name}</a>
+                        </li>
+                    </volist>
+                </volist>
+            </ul>
+        </div>
+    </div>
+
+    <!--广告banner-->
+    <div class="banner">
+        <div class="banner-imgList">
+            <volist name="res_news" id="news">
+            <a href="{$Think.const.URL}News/index?news_id={$news.news_id}">
+            <img width="600" src="/cog/{$news.news_img}" title="banner">
+            </a>
+            </volist>
+           <!--  <img src="{$Think.const.HOME_IMGS}flash2.jpg">
+            <img src="{$Think.const.HOME_IMGS}flash3.jpg"> -->
+        </div>
+        <ul>
+            <li style="background: url('{$Think.const.HOME_IMGS}btn2.png') center no-repeat" class="on"></li>
+            <li style="background: url('{$Think.const.HOME_IMGS}btn1.png') center no-repeat"></li>
+            <li style="background: url('{$Think.const.HOME_IMGS}btn1.png') center no-repeat"></li>
+        </ul>
+        <div style="background: url('{$Think.const.HOME_IMGS}prev.png');" class="banner-prev"></div>
+        <div style="background: url('{$Think.const.HOME_IMGS}next.png');" class="banner-next"></div>
+    </div>
+</div>
+
+<!--热门圈子3-->
+<div class="hot-circle-container">
+    <h2>热门圈子</h2>
+    <volist name="res_hotCircle" id="circle">
+        <div class="hot-circle">
+             <?php if($circle['post_circle_id']){  ?>
+            <a href="{$Think.const.URL}Circle/circlesquare?circle_id={$circle.post_circle_id}">
+            <?php }else if($circle['circle_id']){ ?>
+             <a href="{$Think.const.URL}Circle/circlesquare?circle_id={$circle.circle_id}">
+            <?php } ?>
+                <div class="hot-sub-circle">
+                    <div class="hot-circle-txt">
+                        <img src="/cog/{$circle.circle_img}" width="250px" height="250px"/>
+                    </div>
+                    <div class="hot-circle-information">
+                        <p class="circle-name">{$circle.circle_name}</p>
+                    </div>
+                </div>
+            </a>
+
+            <div class="circle-position-logo"><img width="30" height="30"
+                                                   src="{$Think.const.HOME_IMGS}circle-position.png"></div>
+            <div class="circle-position">{$circle.circle_location}</div>
+            <div class="circle-numbers-logo"><img src="{$Think.const.HOME_IMGS}circle-numbers.png"></div>
+            <div class="circle-numbers">338</div>
+        </div>
+    </volist>
+
+</div>
+
+<!--热门帖子4-->
+<div class="note-container">
+    <h2>热门帖子</h2>
+    <volist name="res_post" id="post">
+        <div class="note">
+
+            <a href="{$Think.const.URL}User/index?post_id={$post.post_id}" style="color: rgb(17, 92, 147);
+">
+                <img src="{$Think.const.HOME_IMGS}greenLogo.png" width="60" height="50"
+                     style=" margin-left: 440px;position: absolute">
+
+                <div class="note-title">【{$post.circle_name}】{$post.post_title}
+                </div>
+            </a>
+
+            <p class="note-information">{$post.post_content}</p>
+        </div>
+    </volist>
+</div>
+
+<!--附近圈子5-->
+<div class="circle-container">
+    <h2>附近圈子</h2>
+    <volist name="res_neighbor" id="circle">
+
+    <div class="circle">
+        <div class="circle-logo">
+            <a href="{$Think.const.URL}Circle/circlesquare?circle_id={$circle.circle_id}">
+            <img class="circle-pic" src="/cog/{$circle.circle_img}" title="圈子头像">
+             <span>
+                <h3>{$circle.circle_name}</h3>
+                <h5>{$circle.post_num}</h5>
+                <h5>圈子人数：100</h5>
+             </span>
+            </a>
+        </div>
+        <div class="circle-message">
+             {$circle.circle_game_id}<br>
+            【信息】{$circle.circle_describe}
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<!--尾部6-->
+<div class="footer-container">
+    <div class="cooperative-partner">
+        <p>合作伙伴：</p>
+        <img src="" height="80" width="120" title="合作伙伴链接1">
+        <img src="" height="80" width="120" title="合作伙伴链接2">
+        <img src="" height="80" width="120" title="合作伙伴链接3">
+        <img src="" height="80" width="120" title="合作伙伴链接4">
+        <img src="" height="80" width="120" title="合作伙伴链接5">
+    </div>
+</div>
+
+<!--浮动框-->
+<div class="lowright">
+    <img width="58" height="58" class="lowlattice"
+         style="background: url('{$Think.const.HOME_IMGS}top.png') top no-repeat">
+
+    <div class="lowlattice">热门<br>圈子</div>
+    <div class="lowlattice">热门<br>帖子</div>
+    <div class="lowlattice">附近<br>圈子</div>
+</div>
+</div>
+<script src="{$Think.const.HOME_JS}/jquery.js"></script>
+<script type="text/javascript" src="{$Think.const.HOME_JS}test/jquery.form.js"></script>
+<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?
+format=js"></script>
+<script>
+    //移除显示不正常的‘我的圈子’中的第一个元素
+    //    $(".user-circle-num:first").remove();
+
+    /*banner js*/
+    var index = 0;
+    var play = null;
+    autoPlay();
+
+    $(".banner li").hover(function () {
+        clearInterval(play);
+    }, function () {
+        autoPlay();
+    });
+
+    $('.banner').hover(function () {
+        $('.banner-prev').show();
+        $('.banner-next').show();
+    }, function () {
+        $('.banner-prev').hide();
+        $('.banner-next').hide();
+    });
+
+    $('.banner-prev').hover(function () {
+        $(this).css('background', "url('{$Think.const.HOME_IMGS}aprev.png')");
+        clearInterval(play);
+    }, function () {
+        $(this).css('background', "url('{$Think.const.HOME_IMGS}prev.png')");
+        autoPlay();
+    });
+
+    $('.banner-prev').click(function () {
+        index--;
+        if (index < 0) {
+            index = 2;
+        }
+        $(".banner ul li").eq(index).css('background', "url('{$Think.const.HOME_IMGS}btn2.png')").siblings('.banner ul li').css('background', "url('{$Think.const.HOME_IMGS}btn1.png') center no-repeat");
+        $(".banner .banner-imgList").animate({"left": index * -800}, 1000);
+    });
+
+    $('.banner-next').click(function () {
+        index++;
+        if (index > 2) {
+            index = 0;
+        }
+        $(".banner ul li").eq(index).css('background', "url('{$Think.const.HOME_IMGS}btn2.png')").siblings('.banner ul li').css('background', "url('{$Think.const.HOME_IMGS}btn1.png') center no-repeat");
+        $(".banner .banner-imgList").animate({"left": index * -800}, 1000);
+    });
+
+    $('.banner-next').hover(function () {
+        $(this).css('background', "url('{$Think.const.HOME_IMGS}anext.png')");
+        clearInterval(play);
+    }, function () {
+        $(this).css('background', "url('{$Think.const.HOME_IMGS}next.png')");
+        autoPlay();
+    });
+
+    $(".banner ul li").click(function () {
+        index = $(this).index();
+        $(this).css('background', "url('{$Think.const.HOME_IMGS}btn2.png')").siblings().css('background', "url('{$Think.const.HOME_IMGS}btn1.png') center no-repeat");
+        $(".banner .banner-imgList").animate({"left": index * -800}, 1000);
+    });
+
+    function autoPlay() {
+        play = setInterval(function () {
+            index++;
+            index %= 3;
+            $(".banner ul li").eq(index).css('background', "url('{$Think.const.HOME_IMGS}btn2.png')").siblings('.banner ul li').css('background', "url('{$Think.const.HOME_IMGS}btn1.png') center no-repeat");
+            $(".banner .banner-imgList").animate({"left": index * -800}, 1000);
+        }, 2500);
+    }
+
+    //用于定位与选择
+    var url = 'http://chaxun.1616.net/s.php?type=ip&output=json&callback=?&_=' + Math.random();
+    $.getJSON(url, function (data) {
+        var myprovince = remote_ip_info['province'];
+        var mycity = remote_ip_info['city'];
+        var mydistrict = remote_ip_info['district'];
+        var myip = data.Ip;
+        $(".city li:first-child").html(myprovince);
+        $(".city li:nth-child(2)").html(mycity);
+        $(".city li:nth-child(3)").html("洪山区");
+    });
+    //存储数组
+    var city = ['武汉', '宜昌', '黄石', '襄樊', '十堰', '荆州', '荆门', '鄂州', '孝感', '黄冈', '咸宁', '随州', '恩施', '仙桃', '潜江', '天门'];
+    var Wuhan = ['江岸区', '江汉区', '硚口区', '汉阳区', '武昌区', '青山区', '洪山区', '东西湖', '江南区', '蔡甸区', '江夏区', '黄陂区', '新洲区', ' ', ' '];
+    var Yichang = ['西陵区', '伍家岗', '点军区', '猇亭区', '夷陵区', '宜都市', '当阳市', '枝江市', '远安县', '兴山县', '秭归县', ' ', ' ', ' ', ' '];
+    var Huangshi = ['黄石港', '西塞山', '下陆区', '铁山区', '大冶市', '阳新县', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Xiangfan = ['襄城区', '樊城区', '襄阳区', '老河口', '枣阳市', '宜城市', '南漳县', '谷城县', '保康县', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Shiyan = ['茅箭区', '张湾区', '丹江口', '郧县', '郧西县', '竹山县', '竹溪县', '房县', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Jingzhou = ['沙市区', '荆州区', '石首市', '洪湖市', '松滋市', '公安县', '监利县', '江陵县', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Jingmen = ['东宝区', '掇刀区', '钟祥市', '京山县', '沙洋县', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Ezhou = ['鄂城区', '梁子湖', '华容区', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Xiaogan = ['孝南区', '应城市', '安陆市', '汉川市', '孝昌县', '大悟县', '云梦县', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Huanggan = ['黄州区', '麻城市', '武穴市', '团风县', '红安县', '罗田县', '英山县', '浠水县', '蕲春县', '黄梅县', ' ', ' ', ' ', ' ', ' '];
+    var Xianning = ['咸安区', '赤壁市', '嘉鱼县', '通城县', '崇阳县', '通山县', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Suizhou = ['曾都区', '广水市', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Enshi = ['恩施市', '利川市', '建始县', '巴东县', '宣恩县', '咸丰县', '来凤县', '鹤峰县', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Xiantao = ['仙桃市', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Qianjiang = ['潜江市', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+    var Tianmen = ['天门市', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+
+    //当市被点击事件(如:武汉)
+    $(".city li:nth-child(2)").click(function () {
+        //展示选择城市模块
+        $(".selectCity").show();
+        $(".selectDistrict").hide();
+        //遍历添加城市
+        $(".selectCity li").each(function (i) {
+            $(this).html(city[i]);
+        }).click(function () {
+            var index = $(this).index();
+            $(".city li:nth-child(2)").html(city[index]);
+            $(".selectCity").hide();
+        });
+    });
+    // $(".city li:nth-child(2)").click(function(){
+    //     var str1 =$(".city li:nth-child(2)").html();
+    //     alert(str1);
+    // })
+    
+    // $(".selectCity li").click(function(){
+    //     alert($(this).html());
+    // });
+     $(".selectDistrict li").click(function(){
+        // alert($(".selectCity li").html());
+        var zone=$(this).html();
+        $.post("{$Think.const.URL}Index/get_neighbor_circle",{'zone':zone},function(data){
+           if(data.state){
+            window.location.reload();
+           }
+                
+        },'json');
+    });
+
+
+
+
+
+
+
+
+
+
+
+    //当区域被点击事件(如:洪山区)
+    $(".city li:nth-child(3)").click(function () {
+        //区域字符串
+        $(".selectCity").hide();
+        var Wuhanstr = Wuhan.join('');
+
+        var Yichangstr = Yichang.join('');
+
+        var Huangshistr = Huangshi.join('');
+
+        var Xiangfanstr = Xiangfan.join('');
+
+        var Shiyanstr = Shiyan.join('');
+
+        var Jingzhoustr = Jingzhou.join('');
+
+        var Jingmenstr = Jingmen.join('');
+
+        var Ezhoustr = Ezhou.join('');
+
+        var Xiaoganstr = Xiaogan.join('');
+
+        var Huangganstr = Huanggan.join('');
+
+        var Xianningstr = Xianning.join('');
+
+        var Suizhoustr = Suizhou.join('');
+
+        var Enshistr = Enshi.join('');
+
+        var Xiantaostr = Xiantao.join('');
+
+        var Qianjiangstr = Qianjiang.join('');
+
+        var Tianmenstr = Tianmen.join('');
+
+        var str = new RegExp($(this).html());
+
+        //武汉
+        if (str.test(Wuhanstr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Wuhan[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Wuhan[index]);
+                $(".selectDistrict").hide();
+                // alert(Wuhan[index]);
+                
+            });
+        }
+        //宜昌
+        else if (str.test(Yichangstr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Yichang[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Yichang[index]);
+                $(".selectDistrict").hide();
+               
+            });
+        }
+        //黄石
+        else if (str.test(Huangshistr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Huangshi[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Huangshi[index]);
+                $(".selectDistrict").hide();
+                
+
+            });
+        }
+        //襄樊
+        else if (str.test(Xiangfanstr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Xiangfan[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Xiangfan[index]);
+                $(".selectDistrict").hide();
+                
+            });
+        }
+        //十堰
+        else if (str.test(Shiyanstr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Shiyan[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Shiyan[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+        //荆州
+        else if (str.test(Jingzhoustr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Jingzhou[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Jingzhou[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+        //荆门
+        else if (str.test(Jingmenstr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Jingmen[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Jingmen[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+        //鄂州
+        else if (str.test(Ezhoustr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Ezhou[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Ezhou[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+        //孝感
+        else if (str.test(Xiaoganstr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Xiaogan[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Xiaogan[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+        //黄冈
+        else if (str.test(Huangganstr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Huanggan[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Huanggan[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+        //咸宁
+        else if (str.test(Xianningstr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Xianning[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Xianning[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+        //随州
+        else if (str.test(Suizhoustr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Suizhou[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Suizhou[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+        //恩施
+        else if (str.test(Enshistr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Enshi[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Enshi[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+        //仙桃
+        else if (str.test(Xiantaostr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Xiantao[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Xiantao[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+        //潜江
+        else if (str.test(Qianjiangstr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Qianjiang[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Qianjiang[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+        else if (str.test(Tianmenstr)) {
+            $(".selectDistrict li").each(function (i) {
+                $(this).html(Tianmen[i]);
+            }).click(function () {
+                var index = $(this).index();
+                $(".city li:nth-child(3)").html(Tianmen[index]);
+                $(".selectDistrict").hide();
+            });
+        }
+
+        $(".selectDistrict").show();
+    });
+
+    //区域选择
+    //取消按钮
+    $('#quxiao').click(function () {
+        $(".selectDistrict").hide();
+    });
+
+    //1.选择武汉时候
+    $(".selectCity li:first-child").click(function () {
+        //区域设置为武汉的区域
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Wuhan[i]);
+        });
+        $(".city li:nth-child(3)").html(Wuhan[0]);
+    });
+    //2.选择宜昌的时候
+    $(".selectCity li:nth-child(2)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Yichang[i]);
+            $(".city li:nth-child(3)").html(Yichang[0]);
+        })
+    });
+    //3.选择黄石的时候
+    $(".selectCity li:nth-child(3)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Huangshi[i]);
+            $(".city li:nth-child(3)").html(Huangshi[0]);
+        })
+    });
+    //4.选择襄樊的时候
+    $(".selectCity li:nth-child(4)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Xiangfan[i]);
+            $(".city li:nth-child(3)").html(Xiangfan[0]);
+        })
+    });
+    //5.选择十堰的时候
+    $(".selectCity li:nth-child(5)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Shiyan[i]);
+            $(".city li:nth-child(3)").html(Shiyan[0]);
+        })
+    });
+    //6.选择荆州的时候
+    $(".selectCity li:nth-child(6)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Jingzhou[i]);
+            $(".city li:nth-child(3)").html(Jingzhou[0]);
+        })
+    });
+    //7.选择荆门的时候
+    $(".selectCity li:nth-child(7)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Jingmen[i]);
+            $(".city li:nth-child(3)").html(Jingmen[0]);
+        })
+    });
+    //8.选择鄂州的时候
+    $(".selectCity li:nth-child(8)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Ezhou[i]);
+            $(".city li:nth-child(3)").html(Ezhou[0]);
+        })
+    });
+    //9.选择孝感的时候
+    $(".selectCity li:nth-child(9)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Xiaogan[i]);
+            $(".city li:nth-child(3)").html(Xiaogan[0]);
+        })
+    });
+    //10.选择黄冈的时候
+    $(".selectCity li:nth-child(10)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Huanggan[i]);
+            $(".city li:nth-child(3)").html(Huanggan[0]);
+        })
+    });
+    //11.选择咸宁的时候
+    $(".selectCity li:nth-child(11)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Xianning[i]);
+            $(".city li:nth-child(3)").html(Xianning[0]);
+        })
+    });
+    //12.选择随州的时候
+    $(".selectCity li:nth-child(12)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Suizhou[i]);
+            $(".city li:nth-child(3)").html(Suizhou[0]);
+        })
+    });
+    //13.选择恩施的时候
+    $(".selectCity li:nth-child(13)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Enshi[i]);
+            $(".city li:nth-child(3)").html(Enshi[0]);
+        })
+    });
+    //14.选择仙桃的时候
+    $(".selectCity li:nth-child(14)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Xiantao[i]);
+            $(".city li:nth-child(3)").html(Xiantao[0]);
+        })
+    });
+    //15.选择潜江的时候
+    $(".selectCity li:nth-child(15)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Qianjiang[i]);
+            $(".city li:nth-child(3)").html(Qianjiang[0]);
+        })
+    });
+    //16.选择天门的时候
+    $(".selectCity li:nth-child(16)").click(function () {
+        $(".selectDistrict li").each(function (i) {
+            $(this).html(Tianmen[i]);
+            $(".city li:nth-child(3)").html(Tianmen[0]);
+        })
+    });
+
+    //滑轮滚动--的一系列事件
+    var hotCircle, hotNote, nearbyCircle;
+    function autoScroll() {
+        setInterval(function () {
+            $(window).scrollTop(function () {
+                var scrollLength = $(window).scrollTop();
+//                document.title = scrollLength;
+
+                //显示热门圈子
+                hotCircle = $(".hot-circle-container h2").offset().top;
+                if (scrollLength >= hotCircle - 400 && scrollLength <= hotCircle - 50) {
+                    $(".hot-circle-container h2").css("color", "rgb(17, 92, 147)");
+                    $(".hot-circle-container").css("border-top", "2px solid rgb(17, 92, 147)");
+                    $(".lowlattice:nth-child(2)").css({"background": "rgb(17, 92, 147)", "color": "white"});
+                    $("div.hot-circle").animate({"top": 0}, 500);
+                }
+                else {
+                    $(".hot-circle-container h2").css("color", "gray");
+                    $(".hot-circle-container").css("border-top", "2px solid gray");
+                    $(".lowlattice:nth-child(2)").css({"background": "white", "color": "rgb(17, 92, 147)"});
+                }
+
+                //显示热门帖子
+                hotNote = $(".note-container h2").offset().top;
+                if (scrollLength >= hotNote - 400 && scrollLength <= hotNote - 50) {
+                    $(".note-container h2").css("color", "rgb(17, 92, 147)");
+                    $(".note-container").css("border-top", "2px solid rgb(17, 92, 147)");
+                    $(".lowlattice:nth-child(3)").css({"background": "rgb(17, 92, 147)", "color": "white"});
+                    $(".note").css({"transform": "rotateX(0deg)"});
+                }
+                else {
+                    $(".note-container h2").css("color", "gray");
+                    $(".note-container").css("border-top", "2px solid gray");
+                    $(".lowlattice:nth-child(3)").css({"background": "white", "color": "rgb(17, 92, 147)"});
+                }
+
+                //显示附近圈子
+                nearbyCircle = $(".circle-container h2").offset().top;
+                if (scrollLength >= nearbyCircle - 400 && scrollLength <= nearbyCircle - 50) {
+                    $(".circle-container h2").css("color", "rgb(17, 92, 147)");
+                    $(".circle-container").css("border-top", "2px solid rgb(17, 92, 147)");
+                    $(".lowlattice:nth-child(4)").css({"background": "rgb(17, 92, 147)", "color": "white"});
+                }
+                else {
+                    $(".circle-container h2").css("color", "gray");
+                    $(".circle-container").css("border-top", "2px solid gray");
+                    $(".lowlattice:nth-child(4)").css({"background": "white", "color": "rgb(17, 92, 147)"});
+                }
+            })
+        }, 500);
+    }
+    autoScroll();
+
+    //浮动框
+    $(".lowlattice:first").click(function () {
+        $("body").animate({"scrollTop": 0}, 500);
+    }).hover(function () {
+        $(this).css("background", "url('{$Think.const.HOME_IMGS}top.png') 0 58px");
+    }, function () {
+        $(this).css("background", "url('{$Think.const.HOME_IMGS}top.png') top");
+    });
+    $(".lowlattice:nth-child(2)").click(function () {
+        $("body").animate({"scrollTop": hotCircle - 200}, 500);
+    });
+    $(".lowlattice:nth-child(3)").click(function () {
+        $("body").animate({"scrollTop": hotNote - 200}, 500);
+    });
+    $(".lowlattice:nth-child(4)").click(function () {
+        $("body").animate({"scrollTop": nearbyCircle - 200}, 500);
+
+    });
+
+    //热门圈子鼠标放置事件
+    $(".hot-circle").hover(function () {
+        $(this).find(".hot-circle-information").animate({"bottom": 0}, 500);
+    });
+
+
+</script>
+</body>
+</html>

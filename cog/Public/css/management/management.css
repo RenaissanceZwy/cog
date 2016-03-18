@@ -1,0 +1,601 @@
+*
+{
+    margin:0;
+    padding: 0;
+    font-family: "mircosoft yahei";
+    list-style: none;
+    text-decoration: none;
+}
+a
+{
+    color:#b1b1b1;
+}
+.container
+{
+    width:1200px;
+    height: 600px;
+    margin: 20px auto;
+}
+.list
+{
+    margin-left:100px;
+    width:150px;
+    height:96px;
+    float: left;
+}
+.list li
+{
+    width:150px;
+    height:32px;
+    border:2px solid #C6C6C6;
+    border-bottom: none;
+    border-right: none;
+    text-align: center;
+    line-height: 32px;
+    font-size: 15px;
+    color:#B1B1B1;
+    cursor: pointer;
+}
+.active
+{
+    background-color: #999999;
+    font-weight:900;
+}
+.active2
+{
+    background-color: #ccc;
+}
+.tabcontent
+{
+    width:900px;
+    height: 600px;
+    border:1px solid black;
+    float: left;
+    border:2px solid #C6C6C6;;
+    position: relative;
+}
+.logo
+{
+    width: 300px;
+    height: 300px;
+    margin: 60px  auto 0 auto;
+}
+.logo img
+{
+    width:100%;
+    height: 100%;
+}
+.slogan
+{
+    font-size: 30px;
+    margin-top:45px;
+    margin-left:260px;
+    color:#2A2A2A;
+}
+.selects
+{
+    margin-top:10px;
+    margin-left:50px;
+    height: 30px;
+    float: left;
+}
+.selects select
+{
+    margin-top:2px;
+    margin-left:20px;
+    height: 26px;
+}
+.search
+{
+    width:200px;
+    height:30px;
+    float:left;
+    margin-left: 200px;
+    margin-top:10px;
+    position: relative;
+}
+.search input
+{   
+    width: 200px;
+    height: 30px;
+    border:1.5px solid #9e9e9e;
+    border-radius: 3px;
+}
+.search img
+{
+    width:18px;
+    height:18px;
+    cursor:pointer;
+    position: absolute;
+    right: 0px;
+    top:6px;
+}
+.clearfloat
+{
+    clear:left;
+}
+hr{
+    width: 96%;
+    margin-left: 2%;
+    margin-top:12px;
+}
+.item
+{
+    font-size: 15px;
+    color:#747474;
+    float: left;
+    margin-top:30px;
+}
+.item1
+{
+    margin-left: 50px;
+}
+.item2
+{
+    margin-left: 220px;
+}
+.item3
+{
+    margin-left: 63px;
+}
+.item4
+{
+    margin-left:50px;
+}
+.item5
+{
+    margin-left: 30px;
+}
+.item6
+{margin-left: 110px;}
+table
+{
+    margin-top:20px;
+     margin-left: 20px;
+    border-collapse:collapse;
+    width: 840px;
+    table-layout:fixed;
+}
+table tr td
+{
+    height: 50px;
+    border: 2px solid #b1b1b1;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size:15px;
+    color:#747474;
+}
+.td1 {
+    vertical-align: top;
+    text-indent: 12px;
+}
+.td1 a:hover,.td2 a:hover
+{
+    color:black;
+    font-weight:700;
+    text-decoration: underline;
+}
+.td2,.td4,.td3,.td5
+{
+    text-align: center;
+}
+.td2
+{
+     font-size:10px;
+     line-height: 50px;
+}
+table tr td p
+{
+    width:120px;
+    height: 24px;
+    margin-left: 5px;
+    text-align: center;
+}
+.delete,.highlight,.stick
+{
+    cursor: pointer;
+    float: left;
+    margin-left: 30px;
+}
+.delete:hover,.highlight:hover,.stick:hover,.delete2:hover,.stick2:hover
+{
+    color:black;
+    font-weight:700;
+}
+.list2
+{
+    margin-left: 60px;
+    margin-top:10px;
+}
+.list2 li
+{
+    width:100px;
+    height:34px;
+    float: left;
+    border:2px solid #BBB;
+    text-align: center;
+    font-size: 13px;
+    line-height: 34px;
+    cursor: pointer;
+}
+.sub-tabcontent
+{
+    width: 800px;
+    height: 500px;
+    margin: 50px 50px;
+}
+.sub-tabcontent select
+{
+    margin: 20px 20px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #b1b1b1;
+    border-radius: 3px;
+}
+.sub-table
+{
+    width: 740px;
+}
+.sub-table tr th ,.sub-table tr td
+{
+    height: 40px;
+    color:#747474;
+    border: none;
+}
+.sub-table tr td .title
+{
+    margin:5px 0px;
+    height: 30px;
+    border:1px solid #b1b1b1;
+    border-radius: 2px;
+    text-indent:20px;
+    line-height: 30px;
+    font-size: 14px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.sub-table tr .number
+{
+    text-align: center;
+}
+.sub-table tr td .delete2,.sub-table tr td .stick2
+{
+    cursor: pointer;
+    margin-left: 45px;
+    float: left;
+}
+.heading
+{
+    margin-top: 100px;
+    margin-left: 20px;
+    width:700px;
+    height: 40px;
+}
+.heading p
+{
+    float: left;
+    font-size:25px;
+    font-weight: 700;
+}
+.heading input
+{
+    float: left;
+    margin:2px 20px;
+    width:600px;
+    height:32px;
+    border:2px solid #C3C3C3;
+}
+.text
+{
+    margin-top:30px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.text p
+{
+    float: left;
+    font-size:25px;
+    font-weight: 700;
+}
+.text  #editor
+{
+    float: left;
+    margin-left: 20px;
+    width:600px;
+    height: 320px;
+    border: 1px solid #c3c3c3;
+    border-radius:5px;
+    overflow: hidden;
+}
+#post
+{
+     float: right;
+    width:90px;
+    height: 30px;
+    margin-right: 108px;
+    margin-top: 10px;
+    border:2px solid #b1b1b1;
+    cursor: pointer;
+    background-color: #fff;
+}
+.user-table tr th ,.user-table tr td
+{
+    height: 80px;
+    font-weight: 600;
+    color:#747474;
+    font-size: 16px;
+    border: none;
+}
+.user-table tr td .picture
+{
+    width:60px;
+    height: 60px;
+    margin: 10px 50px;
+}
+.user-table tr td .picture img
+{
+    width: 100%;
+    height: 100%;
+}
+.user-table tr td  .add , .user-table tr td .minus,.user-table tr td  .cutoff
+{
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.user-table tr td  .add:hover , .user-table tr td .minus:hover,.user-table tr td  .cutoff:hover
+{
+    color:black;
+    font-weight:700;
+}
+
+.manage-table
+{
+    width:840px;
+}
+.manage-table tr th,.manage-table tr td
+{
+    height: 50px;
+    font-size:15px;
+    color:#747474;
+    text-align: center;
+}
+.manage-table tr td
+{
+    border: 2px solid #b1b1b1;
+}
+.manage-table tr
+{
+    margin:100px;
+}
+.manage-table tr td a
+{
+    float: left;
+    margin-left: 20px;
+}
+.manage-table tr td a:hover
+{
+    color:#000;
+    font-weight: 600;
+}
+.tabcontent4 h1
+{
+    position: absolute;
+    top:40px;
+    left: 140px;
+    font-size: 24px;
+    mso-ansi-font-weight: 500;
+}
+.tabcontent4 .circle-name
+{
+    top:130px;
+    left: 100px;
+    width:180px;
+    height: 30px;
+    position: absolute;
+}
+.tabcontent4 .circle-name span,.locate span,.included-games span,.circle-instruction span
+{
+    line-height: 30px;
+    font-size: 14px;
+    float: left;
+}
+.tabcontent4  .circle-name input
+{
+     width:120px;
+    height: 30px;
+    float: right;
+    border: 1px solid #b1b1b1;
+}
+.tabcontent4 .locate
+{
+    position: absolute;
+    height: 30px;
+    top:180px;
+    left: 100px;
+}
+.tabcontent4 .locate select
+{
+    margin-left: 30px;
+    width: 120px;
+    height: 30px;
+}
+.circle-picture
+{
+    position: absolute;
+    width:100px;
+    height: 80px;
+    left:500px;
+    top:70px;
+}
+#click
+{
+    position: absolute;
+    width: 90px;
+    height: 22px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    top:130px;
+    left:620px;
+}
+#click:hover
+{
+    background-color: #b1b1b1;
+}
+.included-games
+{
+    position: absolute;
+    width: 600px;
+    height: 160px;
+    top:240px;
+    left: 60px;
+}
+.alert-input1,.alert-input2
+{
+    position: absolute;
+    background: #ccc;
+    width: 200px;
+    height: 180px;
+    left: 180px;
+    top:-30px;
+    z-index: 999;
+    display: none;
+}
+.alert-input1{
+    background: #ccc;
+    width: 200px;
+    height: 180px;
+    left: 180px;
+    top:-30px;
+}
+.alert-input1 input,.alert-input2 input
+{
+    margin-top: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    height: 30px;
+    border: 1px solid #b1b1b1;
+    float: left;
+}
+#ensure1,#ensure2
+{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    left: 50%;
+    margin-left: -25px;
+    z-index: 9;
+    margin-top: 90px;
+}
+#ensure1{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    margin-left: -25px;
+    z-index: 9;
+    margin-top: 90px;
+}
+#gray
+{
+    z-index: 4;
+    width:100%;
+    height:100%;
+    position:fixed;
+    background:rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+    display: none;
+}
+.add-games,.add-servers
+{
+    margin-left: 60px;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    float: left;
+}
+.minus-games,.minus-servers
+{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    float: left;
+}
+.add-games:hover,.minus-games:hover,.minus-servers:hover,.add-servers:hover
+{
+    cursor: pointer;
+}
+.game-names
+{
+    border:1px solid #b1b1b1;
+    width:220px;
+    height: 110px;
+    position: absolute;
+    top:30px;
+    left: 80px;
+    overflow: auto;
+    border-radius: 3px;
+}
+.game-names li,.server-names li
+{
+    height: 25px;
+    width: 202px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-indent: 20px;
+    cursor: pointer;
+}
+.active3,.active4
+{
+    background-color: rgba(0,0,0,0.3);
+}
+.server-names,.server-names-empty
+{
+    border:1px solid #b1b1b1;
+    width:220px;
+    height: 110px;
+    position: absolute;
+    top:30px;
+    left: 380px;
+    overflow:auto;
+    border-radius: 3px;
+}
+.circle-instruction
+{
+    position:absolute;
+    left:60px;
+    top:400px;
+}
+.circle-instruction textarea
+{
+    width:600px;
+    border:1px solid #b1b1b1;
+    border-radius: 4px;
+    height: 120px;
+    position:absolute;
+    top:20px;
+    left: 80px;
+    resize: none;
+}
+#complete
+{
+    width:100px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    border:1px solid #b1b1b1;
+    cursor: pointer;
+    position: absolute;
+    top:550px;
+    left:380px;
+}
+#complete:hover
+{
+    background-color: #b1b1b1;
+}

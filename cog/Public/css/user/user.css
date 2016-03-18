@@ -1,0 +1,436 @@
+/*网页初始化css来实现不同浏览器的兼容性*/
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p {
+    margin: 0;
+    padding: 0;
+}
+
+/*网页的body的默认字体以及背景颜色*/
+body {
+    background: rgb(250, 250, 250);
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/*清除超链接a的默认样式*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*清除ul li的默认样式*/
+ul {
+    list-style: none;
+}
+/*nav部分*/
+.nav-container {
+    position: relative;
+    background: rgb(17, 92, 147);
+    margin: 33px auto;
+    width: 1200px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+/*nav-logo*/
+.nav-logo {
+    margin-left: 50px;
+    width: 60px;
+    height: 55px;
+    cursor: pointer;
+    float: left;
+}
+
+/*nav-发现另一个你*/
+.nav-caption {
+    width: 200px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+}
+
+/*nav-导航条及按钮*/
+.nav-bar {
+    width: 450px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+}
+
+.nav-bar a {
+    color: rgb(230, 230, 230);
+    margin-left: 20px;
+    width: 80px;
+    height: 55px;
+    float: left;
+    font-size: 16px;
+    line-height: 55px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-bar a:hover {
+    color: white;
+    font-size: 18px;
+}
+
+a.active {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-form {
+    position: absolute;
+    width: 280px;
+    height: 35px;
+    right: 100px;
+    margin-top: 10px;
+}
+
+.nav-form-search {
+    width: 200px;
+    height: 30px;
+    float: left;
+    text-indent: 10px;
+}
+
+/*帖子主体部分*/
+#main-container {
+    margin: 20px auto;
+    width: 1100px;
+    height: 600px;
+}
+
+#main {
+    margin-bottom: 50px;
+    position: absolute;
+    margin-left: 2px;
+    width: 700px;
+    height: auto;
+    border: 1px solid black;
+}
+
+.main-title-main {
+    border-bottom: 1px solid black;
+    width: 700px;
+    height: 40px;
+}
+
+.main-title {
+    width: 699px;
+    height: 40px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 40px;
+}
+
+.main-admin {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    color: blue;
+    cursor: pointer;
+}
+
+.admin-boutique {
+    position: absolute;
+    top: 15px;
+    right: 70px;
+}
+
+.admin-delete {
+    font-size: 14px;
+    color: white;
+    background: red;
+    text-align: center;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    position: absolute;
+    top: 0;
+    left: 620px;
+}
+
+.admin-boutique:hover {
+    text-decoration: underline;
+}
+.main-time {
+    text-indent: 20px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.main-context {
+    text-indent: 20px;
+    line-height: 25px;
+    padding: 5px;
+}
+
+div.collect-btn {
+    color: rgb(240,240,240);
+    background: forestgreen;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 80px;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.share-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.share {
+    position: absolute;
+    left: 0;
+    bottom: 23px;
+    display: none;
+}
+
+#reply-interface {
+    border: 1px solid gray;
+    position: relative;
+    margin-right: 2px;
+    float: right;
+    width: 390px;
+    height: auto;
+}
+/*点击评论*/
+.comment-post-btn {
+    color: rgb(240, 240, 240);
+    border: none;
+    width: 100%;
+    height: 40px;
+    background: rgb(17, 92, 147);
+    text-align: center;
+    line-height: 40px;
+}
+.comment-post-btn:hover{
+    color: white;
+    background: rgb(27, 102, 157);
+}
+.comment-box {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid black;
+}
+
+.comment-information {
+    position: absolute;
+    float: left;
+    width: 70px;
+    height: 150px;
+    border-right: 1px solid black;
+}
+
+.comment-context {
+    left: 70px;
+    position: absolute;
+    text-indent: 25px;
+    width: 320px;
+    height: 150px;
+}
+
+.comment-time {
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.delete-btn {
+    float: right;
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    border: none;
+    right: 0;
+    top: 5px;
+}
+.delete-btn:hover{
+    color: whitesmoke;
+    background: orangered;
+}
+/*回复按钮*/
+.reply-btn {
+    border: none;
+    float: right;
+    width: 45px;
+    height: 25px;
+    position: absolute;
+    right: 83px;
+    bottom: 0;
+}
+.reply-btn:hover{
+    color: whitesmoke;
+    background: rgb(27, 102, 157);
+}
+/*查看回复按钮*/
+.view-reply-btn {
+    float: right;
+    width: 80px;
+    height: 25px;
+    position: absolute;
+    border: none;
+    right: 0;
+    bottom: 0;
+}
+.view-reply-btn:hover{
+    color: whitesmoke;
+    background: rgb(27, 102, 157);
+}
+
+.comment-form-1 {
+    background: white;
+    position: relative;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 150px;
+}
+
+.comment-form-2 {
+    background: white;
+    z-index: 3;
+    top: 150px;
+    position: absolute;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 150px;
+}
+
+.comment-form-3 {
+    background: white;
+    z-index: 3;
+    top: 50%;
+    position: fixed;
+    border-bottom: 1px solid black;
+    width: 390px;
+    height: 150px;
+}
+/*评论输入框*/
+textarea {
+    text-indent: 5px;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 50px;
+    width: 300px;
+    height: 100px;
+}
+/*评论图片按钮*/
+.upload-pic {
+    color: whitesmoke;
+    background: rgb(27, 102, 157);
+    bottom: 10px;
+    left: 70px;
+    position: absolute;
+    width: 60px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+}
+
+/*评论表情按钮*/
+.upload-expressions {
+    color: whitesmoke;
+    background: rgb(27, 102, 157);
+    z-index: 2;
+    bottom: 10px;
+    left: 175px;
+    position: absolute;
+    width: 60px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+}
+/*评论中评论按钮*/
+input[type='submit'] {
+    border: none;
+    color: whitesmoke;
+    background: rgb(27, 102, 157);
+    z-index: 2;
+    bottom: 11px;
+    left: 280px;
+    position: absolute;
+    width: 60px;
+    height: 27px;
+    text-align: center;
+    line-height: 26px;
+}
+/*回复框*/
+.reply-box {
+    font-size: 15px;
+    border: 1px solid lightgray;
+    position: relative;
+    width: 100%;
+    height: 110px;
+}
+.reply-information {
+    border-right: 1px solid black;
+    float: left;
+    width: 70px;
+    height: 110px;
+    font-size: 15px;
+}
+/*回复内容区域*/
+.reply-context {
+    position: absolute;
+    width: 315px;
+    height: 110px;
+    left: 72px;
+}
+/*删除回复按钮*/
+.delete-btn-2 {
+    float: right;
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    border: none;
+    right: 65px;
+    bottom: 10px;
+}
+.delete-btn-2:hover{
+    color: whitesmoke;
+    background: orangered;
+}
+.reply-btn-2 {
+    float: right;
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    border: none;
+    right: 10px;
+    bottom: 10px;
+}
+.reply-btn-2:hover{
+    color: whitesmoke;
+    background: rgb(27, 102, 157);
+}
+
+#gray {
+    display: none;
+    z-index: 3;
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+}
+
+input.nav-form-submit {
+    border: none;
+    position: absolute;
+    top: 3px;
+    left: 120px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
